@@ -583,3 +583,14 @@ footer{
 #cookieReopen:hover{transform:scale(1.05);border-color:rgba(124,92,255,.50);}
 #cookieReopen.show{display:flex;}
 #cookieReopen svg{width:22px;height:22px;stroke:currentColor;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round;}
+
+/* ===== HERO scenario chips – mobile ===== */
+@media(max-width:760px){
+  .scenarioChips, .heroChips, .chips{gap:8px;}
+  .scenarioChips .chip, .heroChips .chip, .chip{padding:10px 14px; font-size:14px; line-height:1.25; min-height:auto; border-radius:12px; flex:1 1 auto; text-align:center; white-space:normal; word-break:normal; hyphens:none;}
+}
+
+@media(max-width:480px){
+  .scenarioChips, .heroChips, .chips{grid-template-columns:1fr !important; display:flex; flex-direction:column;}
+  .scenarioChips .chip, .heroChips .chip, .chip{width:100%; padding:12px 16px; font-size:15px;}
+}
