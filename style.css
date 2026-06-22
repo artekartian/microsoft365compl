@@ -584,19 +584,15 @@ footer{
 #cookieReopen.show{display:flex;}
 #cookieReopen svg{width:22px;height:22px;stroke:currentColor;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round;}
 
-/* ===== HERO scenario chips – mobile ===== */
-@media(max-width:760px){
-  .scenarioChips, .heroChips, .chips{gap:8px;}
-  .scenarioChips .chip, .heroChips .chip, .chip{padding:10px 14px; font-size:14px; line-height:1.25; min-height:auto; border-radius:12px; flex:1 1 auto; text-align:center; white-space:normal; word-break:normal; hyphens:none;}
+@media(max-width:820px){
+  header nav{display:none!important;}
+  header .actions a.btn{display:none!important;}
+  header .hamburger{display:inline-block!important;}
+  #kontakt .container>div[style*="grid"]{grid-template-columns:1fr;}
+  .kontaktGrid{grid-template-columns:1fr;}
+  .ctaRow{display:flex;flex-direction:row;gap:10px;}
+  .ctaRow .btn{flex:1 1 0;justify-content:center;}
 }
 
-@media(max-width:480px){
-  .scenarioChips, .heroChips, .chips{grid-template-columns:1fr !important; display:flex; flex-direction:column;}
-  .scenarioChips .chip, .heroChips .chip, .chip{width:100%; padding:12px 16px; font-size:15px;}
-}
 
-
-/* ===== H2 z ikoną – align do góry ===== */
-.sectionH2, h2.withIcon, h2 .h2Icon{align-items:flex-start;}
-.h2Icon, h2 svg, h2 img{margin-top:.15em; flex-shrink:0;}
 
