@@ -594,3 +594,9 @@ footer{
   .scenarioChips, .heroChips, .chips{grid-template-columns:1fr !important; display:flex; flex-direction:column;}
   .scenarioChips .chip, .heroChips .chip, .chip{width:100%; padding:12px 16px; font-size:15px;}
 }
+
+
+/* ===== H2 z ikoną – align do góry ===== */
+.sectionH2, h2.withIcon, h2 .h2Icon{align-items:flex-start;}
+.h2Icon, h2 svg, h2 img{margin-top:.15em; flex-shrink:0;}
+
