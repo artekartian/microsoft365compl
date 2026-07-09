@@ -796,15 +796,17 @@ document.getElementById('priceToggle').addEventListener('click',function(){
 
 <script>
 (function(){
-  function nbspIt(root){
-    root.querySelectorAll('*').forEach(function(el){
-      if(el.children.length>0) return;
-      var t = el.textContent;
-      if(!t) return;
-      var newT = t.replace(/(\d{1,3})(\d{3})(?!\d)/g, '$1\u00A0$2');
-      if(newT !== t) el.textContent = newT;
-    });
-  }
+function nbspIt(root){
+  root.querySelectorAll('*').forEach(function(el){
+    if(el.children.length>0) return;
+    if(el.id==='y') return;
+    if(el.closest('.skip-nbsp')) return;
+    var t = el.textContent;
+    if(!t) return;
+    var newT = t.replace(/(\d{1,3})(\d{3})(?!\d)/g, '$1\u00A0$2');
+    if(newT !== t) el.textContent = newT;
+  });
+}
   document.addEventListener('DOMContentLoaded', function(){
     nbspIt(document.body);
     document.querySelectorAll('details').forEach(function(d){
