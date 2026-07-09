@@ -1,0 +1,735 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cennik Microsoft 365 – Business, Premium, Copilot | microsoft365.com.pl</title>
+<meta name="description" content="Pełny cennik Microsoft 365 w PLN: Business Basic, Standard, Premium, Copilot, Defender, Purview, Entra ID, Intune. Trzy warianty płatności: roczna przedpłata, miesięcznie z zobowiązaniem, miesięcznie bez zobowiązania. Valcreon – Microsoft CSP Partner.">
+<link rel="icon" href="fav.ico">
+<link rel="stylesheet" href="style.css">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7ZSVQDRJVB"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-7ZSVQDRJVB',{'anonymize_ip':true});</script>
+
+<style>
+.priceDetails{margin-top:14px;border-top:1px solid var(--line);padding-top:12px}
+.priceDetails summary{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px;cursor:pointer;color:var(--text);font-size:13px;font-weight:700;list-style:none}
+.priceDetails summary::marker{display:none}
+.priceDetails summary::-webkit-details-marker{display:none}
+.priceDetails summary:after{content:"▼";display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;border-radius:999px;background:rgba(232,238,252,.06);color:var(--muted);font-size:11px;transition:transform .2s ease}
+.priceDetails[open] summary:after{transform:rotate(180deg)}
+.priceDetails summary:hover{color:var(--accent)}
+.priceDetailsRow{display:flex;flex-direction:column;gap:2px;padding:10px 12px;margin-top:8px;border:1px solid var(--line);border-radius:12px;background:rgba(232,238,252,.03)}
+.priceDetailsRow strong{color:var(--muted);font-size:11px;font-weight:800;letter-spacing:.04em;text-transform:uppercase}
+.priceDetailsRow span{color:var(--text);font-size:16px;font-weight:800;line-height:1.15;letter-spacing:-.01em}
+.priceDetailsRow small{color:var(--muted);font-size:12px;line-height:1.35}
+.priceToggleWrap{display:flex;justify-content:flex-start;margin:8px 0 24px}
+.priceToggle{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:10px 16px;border-radius:999px;border:1px solid var(--line);background:transparent;color:var(--text);font-size:13px;font-weight:700;cursor:pointer;transition:.2s}
+.priceToggle:before{content:"▼";display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:999px;background:rgba(232,238,252,.06);color:var(--muted);font-size:10px;transition:transform .2s ease}
+.priceToggle.expanded:before{transform:rotate(180deg)}
+.priceToggle:hover{border-color:var(--accent);color:var(--accent)}
+.pricePaymentHint{display:block;margin-top:6px;color:var(--muted);font-size:12px;line-height:1.35;font-weight:500}
+.cennikNote{margin:36px 0 0;padding:16px 18px;border:1px solid var(--line);border-radius:16px;background:rgba(232,238,252,.03);color:var(--muted);font-size:12px;line-height:1.55;text-align:center}
+@media(min-width:768px){.priceDetailsRow{padding:12px 14px}}
+@media(min-width:768px){.priceDetailsRow span{font-size:18px}}
+
+.priceCard{display:flex;flex-direction:column}
+.priceCard>.priceDetails{margin-top:auto}
+.priceCard>.btn{margin-top:12px}
+.priceCard>.priceDetails+.btn{margin-top:12px}
+.addonCard{display:flex;flex-direction:column}
+.addonCard>.priceDetails{margin-top:auto}
+
+.pricing{align-items:flex-start!important}
+.addonGrid{align-items:flex-start!important}
+.priceCard{align-self:flex-start!important;display:flex!important;flex-direction:column!important;height:auto!important}
+.priceCard>*{flex:0 0 auto}
+.priceCard .priceName{min-height:56px}
+.priceCard .priceDesc{min-height:70px}
+.priceCard .bullets{min-height:140px;margin-top:16px;margin-bottom:0}
+.priceCard .pricePaymentHint{margin-top:6px;margin-bottom:12px}
+.priceCard>.priceDetails{margin-top:16px}
+.priceCard>.btn{margin-top:12px}
+.addonCard{align-self:flex-start!important;display:flex!important;flex-direction:column!important;height:auto!important}
+.addonCard>*{flex:0 0 auto}
+.drawer .panel{width:320px;max-width:90vw}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="container nav">
+    <a class="brand" href="index.html">
+      <img class="logo" src="logo-32.png" alt="microsoft365.com.pl">
+      <span>
+        <span class="t1">microsoft365.com.pl</span>
+        <div class="t2">Niezależny portal partnera Microsoft CSP</div>
+      </span>
+    </a>
+    <nav aria-label="Główne">
+      <ul>
+        <li><a href="index.html#copilot">Copilot</a></li>
+        <li><a href="index.html#business">Microsoft 365</a></li>
+        <li><a href="cennik.html" aria-current="page">Cennik</a></li>
+        <li><a href="index.html#csp">CSP</a></li>
+        <li><a href="index.html#kontakt">Kontakt</a></li>
+      </ul>
+    </nav>
+    <div class="actions">
+      <a class="btn ghost" href="index.html">← Strona główna</a>
+      <a class="btn primary" href="index.html#kontakt">Porozmawiajmy</a>
+      <button class="hamburger" aria-label="Menu" onclick="var d=document.getElementById('drawer');d.style.display=(d.style.display==='block'?'none':'block')"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- DRAWER -->
+<div class="drawer" id="drawer" onclick="if(event.target===this)this.style.display='none'">
+  <div class="panel" style="width:320px">
+    <div class="top">
+      <strong>Menu</strong>
+      <button class="btn ghost" onclick="document.getElementById('drawer').style.display='none'">Zamknij</button>
+    </div>
+    <nav class="drawerNav">
+      <a href="#index.html" onclick="document.getElementById('drawer').style.display='none'">Strona główna</a>
+      <a href="#copilot" onclick="document.getElementById('drawer').style.display='none'">Microsoft 365 + Copilot</a>
+      <a href="#business" onclick="document.getElementById('drawer').style.display='none'">Microsoft 365 Business</a>
+      <a href="cennik.html" onclick="document.getElementById('drawer').style.display='none'">Pełen cennik</a>
+      <a href="#csp" onclick="document.getElementById('drawer').style.display='none'">Jak kupić</a>
+      <a href="#kontakt" onclick="document.getElementById('drawer').style.display='none'">Kontakt</a>
+    </nav>
+    <div class="drawerActions">
+      <a class="btn primary" href="index.html#kontakt">Porozmawiajmy</a>
+    </div>
+  </div>
+</div>
+
+<!-- =============== CENNIK: HERO =============== -->
+<section id="cennik-hero">
+  <div class="container">
+    <div class="sectionTitle">
+      <div>
+        <span class="pill"><span class="dot"></span> Cennik od lipca 2026</span>
+        <h2>Cennik Microsoft 365 dla firm</h2>
+        <p class="lead">Najważniejsze pakiety z Copilot na początku. Poniżej analogiczne licencje bez Copilot, pakiety bezpieczeństwa, dodatki oraz licencje do tożsamości i zarządzania urządzeniami. Każdy pakiet w trzech wariantach płatności.</p>
+      </div>
+    </div>
+
+    <div class="priceToggleWrap">
+      <button type="button" class="priceToggle" id="priceToggle">Rozwiń wszystkie ceny</button>
+    </div>
+  </div>
+</section>
+
+<!-- =============== CENNIK: COPILOT =============== -->
+<section id="cennik-copilot">
+  <div class="container">
+    <div class="sectionTitle">
+      <div>
+        <span class="pill"><span class="dot"></span> Microsoft 365 + Copilot</span>
+        <h2>Microsoft 365 z Copilot</h2>
+        <p class="lead">Firmy wdrażają Copilot, aby wykonywać więcej pracy bez zwiększania liczby pracowników. To najszybszy sposób na wykorzystanie AI w codziennej pracy.</p>
+      </div>
+    </div>
+
+    <div class="pricing">
+
+      <div class="priceCard">
+        <div class="badge">Copilot standalone</div>
+        <div class="priceName">Microsoft 365 Copilot Business</div>
+        <p class="priceDesc">Samodzielna licencja Copilot Business dla użytkowników Microsoft 365.</p>
+        <div class="price">75 PLN <small>/ netto / mc</small></div>
+        <span class="pricePaymentHint">Cena od – przy rocznej przedpłacie</span>
+        <ul class="bullets">
+          <li>Copilot w Outlook, Word, Excel, PowerPoint, Teams</li>
+          <li>Business Chat z danymi firmy</li>
+          <li>Wymaga aktywnej licencji Microsoft 365</li>
+        </ul>
+        <details class="priceDetails">
+          <summary>Szczegóły cenowe</summary>
+          <div class="priceDetailsRow"><strong>Roczna przedpłata</strong><span>899 PLN / rok</span><small>równowartość 75 PLN miesięcznie</small></div>
+          <div class="priceDetailsRow"><strong>Miesięcznie z zobowiązaniem rocznym</strong><span>79 PLN / mc</span><small>równowartość 944 PLN rocznie</small></div>
+          <div class="priceDetailsRow"><strong>Miesięcznie bez zobowiązania</strong><span>92 PLN / mc</span><small>równowartość 1104 PLN rocznie</small></div>
+        </details>
+        <a class="btn ghost" href="index.html#kontakt">Zapytaj o Copilot Business</a>
+      </div>
+
+      <div class="priceCard featured">
+        <div class="badge">Hit cenowy</div>
+        <div class="newBadge">Najczęściej wybierany</div>
+        <div class="priceName">M365 Business Standard with Copilot</div>
+        <p class="priceDesc">Najlepszy stosunek funkcji do ceny: pakiet Business Standard oraz Copilot w jednej licencji.</p>
+        <div class="price">83 PLN <small>/ netto / mc</small></div>
+        <span class="pricePaymentHint">Cena od – przy rocznej przedpłacie</span>
+        <ul class="bullets">
+          <li>Wszystko z Business Standard</li>
+          <li>Copilot w aplikacjach Office</li>
+          <li>Business Chat + M365 Apps</li>
+          <li>Najlepszy stosunek ceny do możliwości</li>
+        </ul>
+        <details class="priceDetails">
+          <summary>Szczegóły cenowe</summary>
+          <div class="priceDetailsRow"><strong>Roczna przedpłata</strong><span>999 PLN / rok</span><small>równowartość 83 PLN miesięcznie</small></div>
+          <div class="priceDetailsRow"><strong>Miesięcznie z zobowiązaniem rocznym</strong><span>87 PLN / mc</span><small>równowartość 1049 PLN rocznie</small></div>
+          <div class="priceDetailsRow"><strong>Miesięcznie bez zobowiązania</strong><span>102 PLN / mc</span><small>równowartość 1224 PLN rocznie</small></div>
+        </details>
+        <a class="btn primary" href="index.html#kontakt">Porozmawiajmy o Standard + Copilot</a>
+      </div>
+
+      <div class="priceCard featured-purple">
+        <div class="badge">Premium</div>
+        <div class="newBadge">Najbezpieczniejszy</div>
+        <div class="priceName">M365 Business Premium with Copilot</div>
+        <p class="priceDesc">Najbardziej kompletna konfiguracja Microsoft 365 Business z Copilot.</p>
+        <div class="price">125 PLN <small>/ netto / mc</small></div>
+        <span class="pricePaymentHint">Cena od – przy rocznej przedpłacie</span>
+        <ul class="bullets">
+          <li>Wszystko z Business Premium</li>
+          <li>Copilot w aplikacjach Office</li>
+          <li>Zaawansowane cyberbezpieczeństwo</li>
+          <li>Intune, Entra ID P1, Defender</li>
+        </ul>
+        <details class="priceDetails">
+          <summary>Szczegóły cenowe</summary>
+          <div class="priceDetailsRow"><strong>Roczna przedpłata</strong><span>1499 PLN / rok</span><small>równowartość 125 PLN miesięcznie</small></div>
+          <div class="priceDetailsRow"><strong>Miesięcznie z zobowiązaniem rocznym</strong><span>131 PLN / mc</span><small>równowartość 1574 PLN rocznie</small></div>
+          <div class="priceDetailsRow"><strong>Miesięcznie bez zobowiązania</strong><span>154 PLN / mc</span><small>równowartość 1848 PLN rocznie</small></div>
+        </details>
+        <a class="btn accent2" href="index.html#kontakt">Porozmawiajmy o Premium + Copilot</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- =============== CENNIK: BUSINESS BEZ COPILOT =============== -->
+<section id="cennik-business">
+  <div class="container">
+    <div class="sectionTitle">
+      <div>
+        <span class="pill"><span class="dot"></span> Microsoft 365 Business</span>
+        <h2>Microsoft 365 Business bez Copilot</h2>
+        <p class="lead">Analogiczne pakiety bazowe dla firm, które chcą korzystać z Microsoft 365 bez dodatku Copilot.</p>
+      </div>
+    </div>
+
+    <div class="pricing">
+
+      <div class="priceCard">
+        <div class="badge">Basic</div>
+        <div class="newBadge">Najtańszy</div>
+        <div class="priceName">Microsoft 365 Business Basic</div>
+        <p class="priceDesc">Podstawowy pakiet usług Microsoft 365 dla firm.</p>
+        <div class="price">25 PLN <small>/ netto / mc</small></div>
+        <span class="pricePaymentHint">Cena od – przy rocznej przedpłacie</span>
+        <ul class="bullets">
+          <li>Poczta Exchange 50 GB</li>
+          <li>Teams, OneDrive 1 TB, SharePoint</li>
+          <li>Office w przeglądarce (bez desktop)</li>
+        </ul>
+        <details class="priceDetails">
+          <summary>Szczegóły cenowe</summary>
+          <div class="priceDetailsRow"><strong>Roczna przedpłata</strong><span>299 PLN / rok</span><small>równowartość 25 PLN miesięcznie</small></div>
+          <div class="priceDetailsRow"><strong>Miesięcznie z zobowiązaniem rocznym</strong><span>26 PLN / mc</span><small>równowartość 314 PLN rocznie</small></div>
+          <div class="priceDetailsRow"><strong>Miesięcznie bez zobowiązania</strong><span>31 PLN / mc</span><small>równowartość 372 PLN rocznie</small></div>
+        </details>
+        <a class="btn ghost" href="index.html#kontakt">Zapytaj o Basic</a>
+      </div>
+
+      <div class="priceCard featured">
+        <div class="badge">Standard</div>
+        <div class="newBadge">Najpopularniejszy</div>
+        <div class="priceName">Microsoft 365 Business Standard</div>
+        <p class="priceDesc">Najpopularniejszy pakiet Microsoft 365 Business bez Copilot.</p>
+        <div class="price">50 PLN <small>/ netto / mc</small></div>
+        <span class="pricePaymentHint">Cena od – przy rocznej przedpłacie</span>
+        <ul class="bullets">
+          <li>Office desktop + web + mobile</li>
+          <li>Exchange 50 GB, Teams, OneDrive 1 TB</li>
+          <li>SharePoint, Bookings, Loop</li>
+        </ul>
+        <details class="priceDetails">
+          <summary>Szczegóły cenowe</summary>
+          <div class="priceDetailsRow"><strong>Roczna przedpłata</strong><span>599 PLN / rok</span><small>równowartość 50 PLN miesięcznie</small></div>
+          <div class="priceDetailsRow"><strong>Miesięcznie z zobowiązaniem rocznym</strong><span>52 PLN / mc</span><small>równowartość 629 PLN rocznie</small></div>
+          <div class="priceDetailsRow"><strong>Miesięcznie bez zobowiązania</strong><span>61 PLN / mc</span><small>równowartość 732 PLN rocznie</small></div>
+        </details>
+        <a class="btn primary" href="index.html#kontakt">Porozmawiajmy o Standard</a>
+      </div>
+
+      <div class="priceCard featured-purple">
+        <div class="badge">Premium</div>
+        <div class="newBadge">Bezpieczeństwo w cenie</div>
+        <div class="priceName">Microsoft 365 Business Premium</div>
+        <p class="priceDesc">Rozszerzony pakiet Business z dodatkowymi funkcjami bezpieczeństwa i zarządzania.</p>
+        <div class="price">83 PLN <small>/ netto / mc</small></div>
+        <span class="pricePaymentHint">Cena od – przy rocznej przedpłacie</span>
+        <ul class="bullets">
+          <li>Wszystko z Business Standard</li>
+          <li>Intune, Entra ID P1</li>
+          <li>Defender for Business, Autopatch</li>
+        </ul>
+        <details class="priceDetails">
+          <summary>Szczegóły cenowe</summary>
+          <div class="priceDetailsRow"><strong>Roczna przedpłata</strong><span>999 PLN / rok</span><small>równowartość 83 PLN miesięcznie</small></div>
+          <div class="priceDetailsRow"><strong>Miesięcznie z zobowiązaniem rocznym</strong><span>87 PLN / mc</span><small>równowartość 1049 PLN rocznie</small></div>
+          <div class="priceDetailsRow"><strong>Miesięcznie bez zobowiązania</strong><span>102 PLN / mc</span><small>równowartość 1224 PLN rocznie</small></div>
+        </details>
+        <a class="btn accent2" href="index.html#kontakt">Porozmawiajmy o Premium</a>
+      </div>
+
+      <div class="priceCard">
+        <div class="badge">EEA no Teams</div>
+        <div class="priceName">M365 Business Standard EEA no Teams</div>
+        <p class="priceDesc">Business Standard w wariancie EEA bez Microsoft Teams.</p>
+        <div class="price">42 PLN <small>/ netto / mc</small></div>
+        <span class="pricePaymentHint">Cena od – przy rocznej przedpłacie</span>
+        <ul class="bullets">
+          <li>Office desktop + web</li>
+          <li>Exchange, OneDrive, SharePoint</li>
+          <li>Bez licencji Teams</li>
+        </ul>
+        <details class="priceDetails">
+          <summary>Szczegóły cenowe</summary>
+          <div class="priceDetailsRow"><strong>Roczna przedpłata</strong><span>499 PLN / rok</span><small>równowartość 42 PLN miesięcznie</small></div>
+          <div class="priceDetailsRow"><strong>Miesięcznie z zobowiązaniem rocznym</strong><span>44 PLN / mc</span><small>równowartość 524 PLN rocznie</small></div>
+          <div class="priceDetailsRow"><strong>Miesięcznie bez zobowiązania</strong><span>51 PLN / mc</span><small>równowartość 612 PLN rocznie</small></div>
+        </details>
+        <a class="btn ghost" href="index.html#kontakt">Zapytaj o Standard EEA</a>
+      </div>
+
+      <div class="priceCard">
+        <div class="badge">Apps only</div>
+        <div class="priceName">Microsoft 365 Apps for business</div>
+        <p class="priceDesc">Aplikacje Microsoft 365 dla firm w modelu subskrypcyjnym.</p>
+        <div class="price">46 PLN <small>/ netto / mc</small></div>
+        <span class="pricePaymentHint">Cena od – przy rocznej przedpłacie</span>
+        <ul class="bullets">
+          <li>Word, Excel, PowerPoint, Outlook</li>
+          <li>OneDrive 1 TB</li>
+          <li>Bez poczty Exchange i Teams</li>
+        </ul>
+        <details class="priceDetails">
+          <summary>Szczegóły cenowe</summary>
+          <div class="priceDetailsRow"><strong>Roczna przedpłata</strong><span>549 PLN / rok</span><small>równowartość 46 PLN miesięcznie</small></div>
+          <div class="priceDetailsRow"><strong>Miesięcznie z zobowiązaniem rocznym</strong><span>48 PLN / mc</span><small>równowartość 576 PLN rocznie</small></div>
+          <div class="priceDetailsRow"><strong>Miesięcznie bez zobowiązania</strong><span>56 PLN / mc</span><small>równowartość 672 PLN rocznie</small></div>
+        </details>
+        <a class="btn ghost" href="index.html#kontakt">Zapytaj o Apps for business</a>
+      </div>
+
+          </div>
+  </div>
+</section>
+
+<!-- =============== CENNIK: SECURITY SUITES =============== -->
+<section id="cennik-security-suites">
+  <div class="container">
+    <div class="sectionTitle">
+      <div>
+        <span class="pill"><span class="dot"></span> Security i compliance</span>
+        <h2>Defender i Purview dla Business Premium</h2>
+        <p class="lead">Kompletne pakiety Defender i Purview dla Microsoft 365 Business Premium, z pełnym ujęciem cenowym.</p>
+      </div>
+    </div>
+
+    <div class="pricing">
+
+      <div class="priceCard">
+        <div class="badge">Defender Suite</div>
+        <div class="priceName">Microsoft Defender Suite for M365 Business Premium</div>
+        <p class="priceDesc">Pakiet rozszerzający ochronę środowiska Microsoft 365 Business Premium.</p>
+        <div class="price">37 PLN <small>/ netto / mc</small></div>
+        <span class="pricePaymentHint">Cena od – przy rocznej przedpłacie</span>
+        <ul class="bullets">
+          <li>Defender for Office 365 P2</li>
+          <li>Defender for Endpoint P2</li>
+          <li>Defender for Identity, Cloud Apps</li>
+        </ul>
+        <details class="priceDetails">
+          <summary>Szczegóły cenowe</summary>
+          <div class="priceDetailsRow"><strong>Roczna przedpłata</strong><span>449 PLN / rok</span><small>równowartość 37 PLN miesięcznie</small></div>
+          <div class="priceDetailsRow"><strong>Miesięcznie z zobowiązaniem rocznym</strong><span>39 PLN / mc</span><small>równowartość 471 PLN rocznie</small></div>
+          <div class="priceDetailsRow"><strong>Miesięcznie bez zobowiązania</strong><span>46 PLN / mc</span><small>równowartość 552 PLN rocznie</small></div>
+        </details>
+        <a class="btn ghost" href="index.html#kontakt">Zapytaj o Defender Suite</a>
+      </div>
+
+      <div class="priceCard">
+        <div class="badge">Purview Suite</div>
+        <div class="priceName">Microsoft Purview Suite for M365 Business Premium</div>
+        <p class="priceDesc">Pakiet compliance i ochrony informacji dla Business Premium.</p>
+        <div class="price">37 PLN <small>/ netto / mc</small></div>
+        <span class="pricePaymentHint">Cena od – przy rocznej przedpłacie</span>
+        <ul class="bullets">
+          <li>Information Protection i DLP</li>
+          <li>Insider Risk Management</li>
+          <li>eDiscovery, Audit, Records</li>
+        </ul>
+        <details class="priceDetails">
+          <summary>Szczegóły cenowe</summary>
+          <div class="priceDetailsRow"><strong>Roczna przedpłata</strong><span>449 PLN / rok</span><small>równowartość 37 PLN miesięcznie</small></div>
+          <div class="priceDetailsRow"><strong>Miesięcznie z zobowiązaniem rocznym</strong><span>39 PLN / mc</span><small>równowartość 471 PLN rocznie</small></div>
+          <div class="priceDetailsRow"><strong>Miesięcznie bez zobowiązania</strong><span>46 PLN / mc</span><small>równowartość 552 PLN rocznie</small></div>
+        </details>
+        <a class="btn ghost" href="index.html#kontakt">Zapytaj o Purview Suite</a>
+      </div>
+
+      <div class="priceCard featured-purple">
+        <div class="badge">Kompletny pakiet</div>
+        <div class="newBadge">Defender + Purview</div>
+        <div class="priceName">Defender + Purview Suites for M365 Business Premium</div>
+        <p class="priceDesc">Najpełniejsze połączenie pakietów Defender oraz Purview dla Business Premium.</p>
+        <div class="price">54 PLN <small>/ netto / mc</small></div>
+        <span class="pricePaymentHint">Cena od – przy rocznej przedpłacie</span>
+        <ul class="bullets">
+          <li>Cały Defender Suite</li>
+          <li>Cały Purview Suite</li>
+          <li>Rabat pakietowy vs kupno osobno</li>
+        </ul>
+        <details class="priceDetails">
+          <summary>Szczegóły cenowe</summary>
+          <div class="priceDetailsRow"><strong>Roczna przedpłata</strong><span>649 PLN / rok</span><small>równowartość 54 PLN miesięcznie</small></div>
+          <div class="priceDetailsRow"><strong>Miesięcznie z zobowiązaniem rocznym</strong><span>57 PLN / mc</span><small>równowartość 681 PLN rocznie</small></div>
+          <div class="priceDetailsRow"><strong>Miesięcznie bez zobowiązania</strong><span>67 PLN / mc</span><small>równowartość 804 PLN rocznie</small></div>
+        </details>
+        <a class="btn accent2" href="index.html#kontakt">Porozmawiajmy o kompletnym pakiecie</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- =============== CENNIK: DODATKI =============== -->
+<section id="cennik-dodatki">
+  <div class="container">
+    <div class="sectionTitle">
+      <div>
+        <span class="pill"><span class="dot"></span> Add-ons</span>
+        <h2>Dodatki</h2>
+        <p class="lead">Najniższa cena miesięczna wynikająca z rocznej przedpłaty. Rozwiń szczegóły, aby zobaczyć wszystkie warianty płatności.</p>
+      </div>
+    </div>
+
+    <div class="addonGrid">
+
+      <div class="addonCard">
+        <h4>Exchange Online Plan 1</h4>
+        <div class="addonPrice">17 PLN <small>/ netto / mc</small></div>
+        <span class="pricePaymentHint">Cena od – przy rocznej przedpłacie</span>
+        <p>Skrzynka 50 GB, kalendarz, kontakty. Bez Office desktop.</p>
+        <details class="priceDetails">
+          <summary>Szczegóły cenowe</summary>
+          <div class="priceDetailsRow"><strong>Roczna przedpłata</strong><span>199 PLN / rok</span><small>równowartość 17 PLN miesięcznie</small></div>
+          <div class="priceDetailsRow"><strong>Miesięcznie z zobowiązaniem rocznym</strong><span>17 PLN / mc</span><small>równowartość 209 PLN rocznie</small></div>
+          <div class="priceDetailsRow"><strong>Miesięcznie bez zobowiązania</strong><span>20 PLN / mc</span><small>równowartość 240 PLN rocznie</small></div>
+        </details>
+      </div>
+
+      <div class="addonCard">
+        <h4>Exchange Online Plan 2</h4>
+        <div class="addonPrice">29 PLN <small>/ netto / mc</small></div>
+        <span class="pricePaymentHint">Cena od – przy rocznej przedpłacie</span>
+        <p>Skrzynka 100 GB, archiwum, DLP, In-Place Hold.</p>
+        <details class="priceDetails">
+          <summary>Szczegóły cenowe</summary>
+          <div class="priceDetailsRow"><strong>Roczna przedpłata</strong><span>349 PLN / rok</span><small>równowartość 29 PLN miesięcznie</small></div>
+          <div class="priceDetailsRow"><strong>Miesięcznie z zobowiązaniem rocznym</strong><span>31 PLN / mc</span><small>równowartość 366 PLN rocznie</small></div>
+          <div class="priceDetailsRow"><strong>Miesięcznie bez zobowiązania</strong><span>36 PLN / mc</span><small>równowartość 432 PLN rocznie</small></div>
+        </details>
+      </div>
+
+      <div class="addonCard">
+        <h4>Microsoft Teams Essentials</h4>
+        <div class="addonPrice">17 PLN <small>/ netto / mc</small></div>
+        <span class="pricePaymentHint">Cena od – przy rocznej przedpłacie</span>
+        <p>Tylko Teams – czat, spotkania, pliki. Bez poczty.</p>
+        <details class="priceDetails">
+          <summary>Szczegóły cenowe</summary>
+          <div class="priceDetailsRow"><strong>Roczna przedpłata</strong><span>199 PLN / rok</span><small>równowartość 17 PLN miesięcznie</small></div>
+          <div class="priceDetailsRow"><strong>Miesięcznie z zobowiązaniem rocznym</strong><span>17 PLN / mc</span><small>równowartość 209 PLN rocznie</small></div>
+          <div class="priceDetailsRow"><strong>Miesięcznie bez zobowiązania</strong><span>20 PLN / mc</span><small>równowartość 240 PLN rocznie</small></div>
+        </details>
+      </div>
+
+      <div class="addonCard">
+        <h4>Exchange Online Archiving</h4>
+        <div class="addonPrice">12 PLN <small>/ netto / mc</small></div>
+        <span class="pricePaymentHint">Cena od – przy rocznej przedpłacie</span>
+        <p>Bezlimitowe archiwum wiadomości do Exchange Plan 1.</p>
+        <details class="priceDetails">
+          <summary>Szczegóły cenowe</summary>
+          <div class="priceDetailsRow"><strong>Roczna przedpłata</strong><span>149 PLN / rok</span><small>równowartość 12 PLN miesięcznie</small></div>
+          <div class="priceDetailsRow"><strong>Miesięcznie z zobowiązaniem rocznym</strong><span>13 PLN / mc</span><small>równowartość 156 PLN rocznie</small></div>
+          <div class="priceDetailsRow"><strong>Miesięcznie bez zobowiązania</strong><span>15 PLN / mc</span><small>równowartość 180 PLN rocznie</small></div>
+        </details>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- =============== CENNIK: SECURITY MINI =============== -->
+<section id="cennik-security-mini">
+  <div class="container">
+    <div class="sectionTitle">
+      <div>
+        <span class="pill"><span class="dot"></span> Cyberbezpieczeństwo</span>
+        <h2>Security – dodatki punktowe</h2>
+        <p class="lead">Podstawowe dodatki bezpieczeństwa w wersji mini. Kupisz tylko to, czego brakuje w twoim planie.</p>
+      </div>
+    </div>
+
+    <div class="addonGrid">
+
+      <div class="addonCard">
+        <h4>Defender for Office 365 Plan 1</h4>
+        <div class="addonPrice">8 PLN <small>/ netto / mc</small></div>
+        <span class="pricePaymentHint">Cena od – przy rocznej przedpłacie</span>
+        <p>Safe Links, Safe Attachments, anty-phishing dla poczty.</p>
+        <details class="priceDetails">
+          <summary>Szczegóły cenowe</summary>
+          <div class="priceDetailsRow"><strong>Roczna przedpłata</strong><span>99 PLN / rok</span><small>równowartość 8 PLN miesięcznie</small></div>
+          <div class="priceDetailsRow"><strong>Miesięcznie z zobowiązaniem rocznym</strong><span>9 PLN / mc</span><small>równowartość 104 PLN rocznie</small></div>
+          <div class="priceDetailsRow"><strong>Miesięcznie bez zobowiązania</strong><span>10 PLN / mc</span><small>równowartość 120 PLN rocznie</small></div>
+        </details>
+      </div>
+
+      <div class="addonCard">
+        <h4>Defender for Business</h4>
+        <div class="addonPrice">12 PLN <small>/ netto / mc</small></div>
+        <span class="pricePaymentHint">Cena od – przy rocznej przedpłacie</span>
+        <p>EDR na endpointach – ochrona przed ransomware dla firm SMB.</p>
+        <details class="priceDetails">
+          <summary>Szczegóły cenowe</summary>
+          <div class="priceDetailsRow"><strong>Roczna przedpłata</strong><span>149 PLN / rok</span><small>równowartość 12 PLN miesięcznie</small></div>
+          <div class="priceDetailsRow"><strong>Miesięcznie z zobowiązaniem rocznym</strong><span>13 PLN / mc</span><small>równowartość 156 PLN rocznie</small></div>
+          <div class="priceDetailsRow"><strong>Miesięcznie bez zobowiązania</strong><span>15 PLN / mc</span><small>równowartość 180 PLN rocznie</small></div>
+        </details>
+      </div>
+
+      <div class="addonCard">
+        <h4>Defender for Business servers</h4>
+        <div class="addonPrice">12 PLN <small>/ netto / mc</small></div>
+        <span class="pricePaymentHint">Cena od – przy rocznej przedpłacie</span>
+        <p>Dodatek do Defender for Business – ochrona serwerów Windows.</p>
+        <details class="priceDetails">
+          <summary>Szczegóły cenowe</summary>
+          <div class="priceDetailsRow"><strong>Roczna przedpłata</strong><span>149 PLN / rok</span><small>równowartość 12 PLN miesięcznie</small></div>
+          <div class="priceDetailsRow"><strong>Miesięcznie z zobowiązaniem rocznym</strong><span>13 PLN / mc</span><small>równowartość 156 PLN rocznie</small></div>
+          <div class="priceDetailsRow"><strong>Miesięcznie bez zobowiązania</strong><span>15 PLN / mc</span><small>równowartość 180 PLN rocznie</small></div>
+        </details>
+      </div>
+
+      <div class="addonCard">
+        <h4>Defender for Endpoint P1</h4>
+        <div class="addonPrice">12 PLN <small>/ netto / mc</small></div>
+        <span class="pricePaymentHint">Cena od – przy rocznej przedpłacie</span>
+        <p>Antywirus nowej generacji dla urządzeń Windows, macOS, iOS, Android.</p>
+        <details class="priceDetails">
+          <summary>Szczegóły cenowe</summary>
+          <div class="priceDetailsRow"><strong>Roczna przedpłata</strong><span>149 PLN / rok</span><small>równowartość 12 PLN miesięcznie</small></div>
+          <div class="priceDetailsRow"><strong>Miesięcznie z zobowiązaniem rocznym</strong><span>13 PLN / mc</span><small>równowartość 156 PLN rocznie</small></div>
+          <div class="priceDetailsRow"><strong>Miesięcznie bez zobowiązania</strong><span>15 PLN / mc</span><small>równowartość 180 PLN rocznie</small></div>
+        </details>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- =============== CENNIK: TOŻSAMOŚĆ I URZĄDZENIA =============== -->
+<section id="cennik-identity">
+  <div class="container">
+    <div class="sectionTitle">
+      <div>
+        <span class="pill"><span class="dot"></span> Tożsamość i urządzenia</span>
+        <h2>Entra ID i Intune</h2>
+        <p class="lead">Podstawowe dodatki zarządzania tożsamością i urządzeniami.</p>
+      </div>
+    </div>
+
+    <div class="addonGrid">
+
+      <div class="addonCard">
+        <h4>Microsoft Entra ID P1</h4>
+        <div class="addonPrice">25 PLN <small>/ netto / mc</small></div>
+        <span class="pricePaymentHint">Cena od – przy rocznej przedpłacie</span>
+        <p>MFA, Dostęp warunkowy, grupy dynamiczne, SSPR.</p>
+        <details class="priceDetails">
+          <summary>Szczegóły cenowe</summary>
+          <div class="priceDetailsRow"><strong>Roczna przedpłata</strong><span>299 PLN / rok</span><small>równowartość 25 PLN miesięcznie</small></div>
+          <div class="priceDetailsRow"><strong>Miesięcznie z zobowiązaniem rocznym</strong><span>26 PLN / mc</span><small>równowartość 314 PLN rocznie</small></div>
+          <div class="priceDetailsRow"><strong>Miesięcznie bez zobowiązania</strong><span>31 PLN / mc</span><small>równowartość 372 PLN rocznie</small></div>
+        </details>
+      </div>
+
+      <div class="addonCard">
+        <h4>Microsoft Entra ID P2</h4>
+        <div class="addonPrice">37 PLN <small>/ netto / mc</small></div>
+        <span class="pricePaymentHint">Cena od – przy rocznej przedpłacie</span>
+        <p>Identity Protection, PIM, Access Reviews.</p>
+        <details class="priceDetails">
+          <summary>Szczegóły cenowe</summary>
+          <div class="priceDetailsRow"><strong>Roczna przedpłata</strong><span>449 PLN / rok</span><small>równowartość 37 PLN miesięcznie</small></div>
+          <div class="priceDetailsRow"><strong>Miesięcznie z zobowiązaniem rocznym</strong><span>39 PLN / mc</span><small>równowartość 471 PLN rocznie</small></div>
+          <div class="priceDetailsRow"><strong>Miesięcznie bez zobowiązania</strong><span>46 PLN / mc</span><small>równowartość 552 PLN rocznie</small></div>
+        </details>
+      </div>
+
+      <div class="addonCard">
+        <h4>Microsoft Intune Plan 1</h4>
+        <div class="addonPrice">29 PLN <small>/ netto / mc</small></div>
+        <span class="pricePaymentHint">Cena od – przy rocznej przedpłacie</span>
+        <p>MDM, MAM, Autopilot, Autopatch, compliance policies.</p>
+        <details class="priceDetails">
+          <summary>Szczegóły cenowe</summary>
+          <div class="priceDetailsRow"><strong>Roczna przedpłata</strong><span>349 PLN / rok</span><small>równowartość 29 PLN miesięcznie</small></div>
+          <div class="priceDetailsRow"><strong>Miesięcznie z zobowiązaniem rocznym</strong><span>31 PLN / mc</span><small>równowartość 366 PLN rocznie</small></div>
+          <div class="priceDetailsRow"><strong>Miesięcznie bez zobowiązania</strong><span>36 PLN / mc</span><small>równowartość 432 PLN rocznie</small></div>
+        </details>
+      </div>
+
+      <div class="addonCard">
+        <h4>Microsoft Intune Suite</h4>
+        <div class="addonPrice">37 PLN <small>/ netto / mc</small></div>
+        <span class="pricePaymentHint">Cena od – przy rocznej przedpłacie</span>
+        <p>Intune Plan 1 + Remote Help, Endpoint Privilege Management, Advanced Analytics.</p>
+        <details class="priceDetails">
+          <summary>Szczegóły cenowe</summary>
+          <div class="priceDetailsRow"><strong>Roczna przedpłata</strong><span>449 PLN / rok</span><small>równowartość 37 PLN miesięcznie</small></div>
+          <div class="priceDetailsRow"><strong>Miesięcznie z zobowiązaniem rocznym</strong><span>39 PLN / mc</span><small>równowartość 471 PLN rocznie</small></div>
+          <div class="priceDetailsRow"><strong>Miesięcznie bez zobowiązania</strong><span>46 PLN / mc</span><small>równowartość 552 PLN rocznie</small></div>
+        </details>
+      </div>
+
+    </div>
+
+    <div class="cennikNote">Ceny netto w PLN. Obowiązują od 01.07.2026. Cennik ma charakter informacyjny i może ulec zmianie. Ceny „od” oznaczają równowartość miesięczną przy rocznej przedpłacie.</div>
+  </div>
+</section>
+
+<!-- =============== CTA =============== -->
+<section id="cennik-cta">
+  <div class="container">
+    <div class="bigCta">
+      <h3>Nie wiesz, który plan wybrać?</h3>
+      <p>15 minut rozmowy z polskim doradcą Microsoft CSP. Bez sprzedażowego ciśnienia, konkretne liczby i rekomendacja pod Twoją firmę.</p>
+      <a class="btn primary" href="index.html#kontakt">Porozmawiajmy o licencjach</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footCta">
+      <h3>Jesteś już klientem Microsoft? Przenieś licencje do polskiego CSP.</h3>
+      <p>Ten sam Microsoft 365, ta sama cena od Microsoft, tylko z polskim wsparciem, fakturą PLN i elastycznością CSP.</p>
+      <a class="btn primary" href="index.html#kontakt">Umów bezpłatną konsultację</a>
+    </div>
+
+    <div class="footGridV2">
+      <div>
+        <div class="footBrand">
+          <img src="logo-32.png" alt="microsoft365.com.pl">
+          <div>
+            <div class="footBrandName">microsoft365.com.pl</div>
+            <div class="footBrandTag">Microsoft 365 · Copilot · Security</div>
+          </div>
+        </div>
+        <p class="fine">Niezależny portal partnera Microsoft CSP.<br>Serwis prowadzony przez Valcreon Sp. z o.o.<br>Microsoft 365, Copilot, Teams to zastrzeżone znaki towarowe Microsoft.</p>
+      </div>
+      <div>
+        <h4 class="footTitle">Licencje</h4>
+        <ul class="footList">
+          <li><a href="index.html#copilot">Copilot Business</a></li>
+          <li><a href="index.html#business">Microsoft 365 Business</a></li>
+          <li><a href="cennik.html">Pełny cennik</a></li>
+          <li><a href="index.html#dodatki">Licencje i dodatki</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footTitle">Jesteś już w Microsoft?</h4>
+        <ul class="footList">
+          <li><a href="index.html#csp">Zmiana partnera CSP</a></li>
+          <li><a href="index.html#renewal">Renewal / Odnowienie</a></li>
+          <li><a href="index.html#faq">FAQ</a></li>
+          <li><a href="https://valcreon.com" target="_blank" rel="noopener">Valcreon CSP Partner</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footBottom">
+      <div class="fine">© <span id="y"></span> Valcreon Sp. z o.o. · NIP 5273196631 · Wszelkie prawa zastrzeżone.</div>
+      <div class="footLinks">
+        <a href="politykaprywatnosci.html">Polityka prywatności</a><span>·</span>
+        <a href="regulamin.html">Regulamin</a><span>·</span>
+        <a href="rodo.html">RODO</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- COOKIE BANNER -->
+<div id="cookieBanner" role="dialog" aria-labelledby="cookieTitle" aria-describedby="cookieDesc">
+  <div class="cookieHead">
+    <div class="cookieIco"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10c0-.46-.03-.92-.1-1.36a4 4 0 0 1-5.54-5.54A10 10 0 0 0 12 2z"/><circle cx="8.5" cy="10.5" r="1"/><circle cx="14" cy="14" r="1"/><circle cx="10" cy="16" r="1"/></svg></div>
+    <div>
+      <div id="cookieTitle" class="cookieTitle">Ciasteczka i prywatność</div>
+      <p id="cookieDesc" class="cookieDesc">Używamy plików cookies, aby strona działała prawidłowo, mierzyć ruch (Google Analytics) i ulepszać treści. Szczegóły w <a href="politykaprywatnosci.html">polityce prywatności</a>.</p>
+    </div>
+  </div>
+  <div class="cookieActions">
+    <button class="cookieBtn primary" onclick="acceptAllCookies()">Akceptuj wszystkie</button>
+    <button class="cookieBtn" onclick="acceptNecessaryCookies()">Tylko niezbędne</button>
+    <button class="cookieBtn" onclick="openCookieSettings()">Ustawienia</button>
+  </div>
+</div>
+
+<div id="cookieModal" role="dialog" aria-labelledby="cookieModalTitle">
+  <div class="cookieModalBox">
+    <h3 id="cookieModalTitle">Ustawienia ciasteczek</h3>
+    <p>Wybierz, na które kategorie cookies wyrażasz zgodę. Możesz zmienić swój wybór w każdej chwili klikając ikonę w lewym dolnym rogu.</p>
+    <div class="cookieCategory"><div class="cookieCategoryHead"><div><strong>Niezbędne</strong><p>Wymagane do działania strony. Nie można ich wyłączyć.</p></div><input type="checkbox" class="cookieToggle" checked disabled></div></div>
+    <div class="cookieCategory"><div class="cookieCategoryHead"><div><strong>Analityczne (Google Analytics 4)</strong><p>Pomagają zrozumieć, jak korzystasz ze strony – anonimowo.</p></div><input type="checkbox" class="cookieToggle" id="cookieAnalytics"></div></div>
+    <div class="cookieCategory"><div class="cookieCategoryHead"><div><strong>Marketingowe</strong><p>Pozwalają pokazywać Ci trafniejsze reklamy Valcreon.</p></div><input type="checkbox" class="cookieToggle" id="cookieMarketing"></div></div>
+    <div class="cookieModalActions">
+      <button class="cookieBtn" onclick="closeCookieSettings()">Anuluj</button>
+      <button class="cookieBtn primary" onclick="saveCookieSettings()">Zapisz wybór</button>
+    </div>
+  </div>
+</div>
+
+<button id="cookieReopen" onclick="reopenCookieBanner()" aria-label="Ustawienia ciasteczek" title="Ustawienia ciasteczek"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10c0-.46-.03-.92-.1-1.36a4 4 0 0 1-5.54-5.54A10 10 0 0 0 12 2z"/><circle cx="8.5" cy="10.5" r="1"/><circle cx="14" cy="14" r="1"/><circle cx="10" cy="16" r="1"/></svg></button>
+
+<script>
+document.getElementById('y').textContent=new Date().getFullYear();
+
+document.getElementById('priceToggle').addEventListener('click',function(){
+  const details=document.querySelectorAll('.priceDetails');
+  const opened=document.querySelectorAll('.priceDetails[open]').length;
+  if(opened<details.length){details.forEach(d=>d.open=true);this.classList.add('expanded');this.textContent='Zwiń wszystkie ceny';}
+  else{details.forEach(d=>d.open=false);this.classList.remove('expanded');this.textContent='Rozwiń wszystkie ceny';}
+});
+
+(function(){
+  const CONSENT_KEY='valcreon_cookie_consent';const CONSENT_VERSION='1';const CONSENT_DAYS=365;
+  window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}window.gtag=gtag;
+  gtag('consent','default',{'analytics_storage':'denied','ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','functionality_storage':'granted','security_storage':'granted'});
+  function getStoredConsent(){try{const raw=localStorage.getItem(CONSENT_KEY);if(!raw)return null;const d=JSON.parse(raw);if(d.v!==CONSENT_VERSION)return null;if(Date.now()-d.t>CONSENT_DAYS*24*60*60*1000)return null;return d;}catch(e){return null;}}
+  function saveConsent(a,m){const d={v:CONSENT_VERSION,t:Date.now(),analytics:a,marketing:m};localStorage.setItem(CONSENT_KEY,JSON.stringify(d));applyConsent(a,m);document.getElementById('cookieBanner').classList.remove('show');document.getElementById('cookieModal').classList.remove('show');document.getElementById('cookieReopen').classList.add('show');}
+  function applyConsent(a,m){gtag('consent','update',{'analytics_storage':a?'granted':'denied','ad_storage':m?'granted':'denied','ad_user_data':m?'granted':'denied','ad_personalization':m?'granted':'denied'});}
+  window.acceptAllCookies=function(){saveConsent(true,true);};
+  window.acceptNecessaryCookies=function(){saveConsent(false,false);};
+  window.openCookieSettings=function(){const s=getStoredConsent();document.getElementById('cookieAnalytics').checked=s?s.analytics:false;document.getElementById('cookieMarketing').checked=s?s.marketing:false;document.getElementById('cookieModal').classList.add('show');};
+  window.closeCookieSettings=function(){document.getElementById('cookieModal').classList.remove('show');};
+  window.saveCookieSettings=function(){saveConsent(document.getElementById('cookieAnalytics').checked,document.getElementById('cookieMarketing').checked);};
+  window.reopenCookieBanner=function(){document.getElementById('cookieReopen').classList.remove('show');document.getElementById('cookieBanner').classList.add('show');};
+  document.addEventListener('DOMContentLoaded',function(){const s=getStoredConsent();if(s){applyConsent(s.analytics,s.marketing);document.getElementById('cookieReopen').classList.add('show');}else{setTimeout(function(){document.getElementById('cookieBanner').classList.add('show');},800);}});
+  document.getElementById('cookieModal').addEventListener('click',function(e){if(e.target===this)closeCookieSettings();});
+})();
+</script>
+</body>
+</html>
