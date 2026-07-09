@@ -25,7 +25,7 @@
 <!-- ================= HEADER ================= -->
 <header>
   <div class="container nav">
-<a class="brand" href="/#top">
+    <a class="brand" href="#">
       <img src="logo-32.png" alt="microsoft365.com.pl" class="logo">
       <span>
         <div class="t1">microsoft365.com.pl</div>
@@ -34,22 +34,42 @@
     </a>
     <nav aria-label="Główne">
       <ul>
-        <li><a href="index.html#copilot">Copilot</a></li>
-        <li><a href="index.html#business">Microsoft 365</a></li>
-        <li><a href="cennik.html">Pełen cennik</a></li>
-        <li><a href="index.html#csp">Jak kupić</a></li>
-        <li><a href="index.html#kontakt">Kontakt</a></li>
+        <li><a href="#copilot">Copilot</a></li>
+        <li><a href="#business">Microsoft 365</a></li>
+        <li><a href="cennik.html" aria-current="page">Pełen cennik</a></li>
+        <li><a href="#csp">Jak kupić</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
       </ul>
     </nav>
     <div class="actions">
-      <a href="/#renewal" class="btn ghost">Odnów licencje</a>
-      <a href="/#kontakt" class="btn primary">Porozmawiajmy</a>
-      <button class="hamburger" aria-label="Menu" onclick="document.getElementById('drawer').style.display='block'">
-        <span></span><span></span><span></span>
-      </button>
+      <a href="#renewal" class="btn ghost">Odnów licencje</a>
+      <a href="#kontakt" class="btn primary">Porozmawiajmy</a>
+     <button class="hamburger" aria-label="Menu" onclick="var d=document.getElementById('drawer');d.style.display=(d.style.display==='block'?'none':'block')"><span></span><span></span><span></span></button>
     </div>
   </div>
 </header>
+
+<!-- ================= DRAWER (mobile) ================= -->
+<div class="drawer" id="drawer" onclick="if(event.target===this)this.style.display='none'">
+  <div class="panel" style="width:320px">
+    <div class="top">
+      <strong>Menu</strong>
+      <button class="btn ghost" onclick="document.getElementById('drawer').style.display='none'">Zamknij</button>
+    </div>
+    <nav class="drawerNav">
+      <a href="#copilot" onclick="document.getElementById('drawer').style.display='none'">Microsoft 365 + Copilot</a>
+      <a href="#business" onclick="document.getElementById('drawer').style.display='none'">Microsoft 365 Business</a>
+      <a href="cennik.html" onclick="document.getElementById('drawer').style.display='none'">Pełen cennik</a>
+      <a href="#csp" onclick="document.getElementById('drawer').style.display='none'">Jak kupić</a>
+      <a href="subskrypcja.html" onclick="document.getElementById('drawer').style.display='none'">Jak działa subskrypcja</a>
+      <a href="#kontakt" onclick="document.getElementById('drawer').style.display='none'">Kontakt</a>
+    </nav>
+    <div class="drawerActions">
+      <a href="#renewal" class="btn ghost">Odnów licencje</a>
+      <a href="#kontakt" class="btn primary">Porozmawiajmy</a>
+    </div>
+  </div>
+</div>
 
 <section style="padding-top:80px;">
   <div class="container" style="max-width:880px;">
