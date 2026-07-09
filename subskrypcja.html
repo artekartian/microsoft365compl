@@ -1,0 +1,663 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7ZSVQDRJVB"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('consent','default',{'analytics_storage':'denied','ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','functionality_storage':'granted','security_storage':'granted'});gtag('js',new Date());gtag('config','G-7ZSVQDRJVB',{'anonymize_ip':true});</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Jak działa subskrypcja Microsoft 365 dla firm | microsoft365.com.pl</title>
+<meta name="description" content="Przewodnik dla klienta: jak działa subskrypcja Microsoft 365 w modelu CSP. Okres zobowiązania, płatności, ochrona ceny, rezygnacja, odnowienie.">
+<link rel="icon" href="fav.ico">
+<link rel="stylesheet" href="style.css">
+<style>
+.subHero{padding:60px 0 20px;text-align:center;max-width:820px;margin:0 auto}
+.subHero h1{font-size:clamp(2rem,5vw,3.2rem);line-height:1.1;letter-spacing:-.02em;margin:16px 0 18px}
+.subHero .lead{max-width:680px;margin:0 auto;font-size:1.02rem;line-height:1.6}
+.subToc{display:grid;grid-template-columns:1fr;gap:10px;margin:24px 0 40px}
+.subToc a{display:block;padding:14px 16px;border:1px solid var(--line);border-radius:14px;background:rgba(232,238,252,.03);color:var(--text);font-size:.9rem;font-weight:700;text-decoration:none;transition:.2s}
+.subToc a:hover{border-color:var(--accent);color:var(--accent);background:rgba(37,108,255,.06)}
+.subToc a .subTocNum{color:var(--accent);font-size:.72rem;display:inline-block;margin-bottom:6px;padding:3px 8px;border-radius:999px;background:rgba(37,108,255,.12);letter-spacing:.06em;text-transform:uppercase;font-weight:900}
+@media(min-width:768px){.subToc{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1180px){.subToc{grid-template-columns:repeat(3,1fr)}}
+.subGroup{border:1px solid var(--line);border-radius:18px;background:rgba(232,238,252,.03);margin-bottom:16px;overflow:hidden}
+.subGroup>summary{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;cursor:pointer;padding:20px 24px;font-weight:800;font-size:1.05rem;color:var(--text);list-style:none}
+.subGroup>summary::marker{display:none}
+.subGroup>summary::-webkit-details-marker{display:none}
+.subGroup>summary:after{content:"▼";display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:999px;background:rgba(232,238,252,.06);color:var(--muted);font-size:12px;transition:transform .2s ease;flex:0 0 auto}
+.subGroup[open]>summary:after{transform:rotate(180deg)}
+.subGroup>summary:hover{color:var(--accent)}
+.subGroupTag{display:inline-flex;align-items:center;justify-content:center;min-width:36px;height:36px;padding:0 12px;border-radius:999px;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff;font-size:.9rem;font-weight:900;margin-right:14px;letter-spacing:.04em;box-shadow:0 4px 14px rgba(37,108,255,.30)}
+.subGroupBody{padding:8px 24px 24px;border-top:1px solid rgba(232,238,252,.06)}
+.subSection{margin-top:28px}
+.subSection:first-child{margin-top:16px}
+.subSection h3{margin:0 0 12px;font-size:1.05rem;color:var(--text);font-weight:800;display:flex;flex-wrap:wrap;align-items:center;gap:0;line-height:1.35}
+.subSection h3 .subNum{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;background:var(--accent);color:#fff;border-radius:999px;font-size:.78rem;font-weight:900;margin-right:12px;flex:0 0 auto}
+.subSection p{margin:0 0 18px;color:var(--muted);line-height:1.65;font-size:.95rem}
+.subSection ul{margin:8px 0 12px 22px;color:var(--muted);font-size:.95rem;line-height:1.65}
+.subSection li{margin-bottom:6px}
+.subSection strong{color:var(--text)}
+.subSection a{color:var(--accent);text-decoration:underline;text-underline-offset:3px}
+.subSection a:hover{color:var(--accent2)}
+.subPlaceholder{padding:14px 16px;border:1px dashed rgba(232,238,252,.15);border-radius:12px;background:rgba(232,238,252,.02);color:var(--muted);font-size:.85rem;font-style:italic;margin-top:8px;margin:0 0 18px}
+.subGridTable{display:grid;gap:1px;background:rgba(232,238,252,.10);border-radius:14px;overflow:hidden;margin:18px 0}
+.subGridTable>div{background:var(--panel);padding:14px 16px;font-size:.9rem;color:var(--muted);line-height:1.5}
+.subGridTable>div.subGridHead{background:rgba(232,238,252,.06);color:var(--text);font-weight:800;font-size:.8rem;text-transform:uppercase;letter-spacing:.04em}
+.subGridTable-3{grid-template-columns:1fr}
+.subGridTable-5{grid-template-columns:1fr}
+@media(min-width:768px){.subGridTable-3{grid-template-columns:1fr 1fr 1fr}}
+@media(min-width:768px){.subGridTable-5{grid-template-columns:1.2fr 1fr 1fr 1fr 1.2fr}}
+.subCta{margin:48px 0 32px;padding:36px 24px;border-radius:22px;background:linear-gradient(135deg,rgba(37,108,255,.12),rgba(124,92,255,.10));border:1px solid rgba(37,108,255,.20);text-align:center}
+.subCta h2{margin:0 0 12px;font-size:1.4rem;color:var(--text)}
+.subCta p{margin:0 auto 20px;max-width:600px;color:var(--muted);line-height:1.6}
+.subCta .ctaButtons{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
+.footCta{display:block;text-align:center;padding:32px 20px;margin:0 auto 32px;max-width:1180px}
+.footCta h3{margin:0 auto 12px;max-width:720px}
+.footCta p{margin:0 auto 20px;max-width:640px;opacity:.85}
+.footCta .btn{display:inline-flex;margin:0 auto}
+.drawer .panel{width:320px;max-width:90vw}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="container nav">
+    <a href="index.html" class="brand">
+      <img src="logo-32.png" alt="microsoft365.com.pl" class="logo">
+      <span>
+        <span class="t1">microsoft365.com.pl</span>
+        <div class="t2">Niezależny portal partnera Microsoft CSP</div>
+      </span>
+    </a>
+    <nav aria-label="Główne">
+      <ul>
+        <li><a href="index.html#copilot">Copilot</a></li>
+        <li><a href="index.html#business">Microsoft 365</a></li>
+        <li><a href="cennik.html">Pełen cennik</a></li>
+        <li><a href="index.html#csp">Jak kupić</a></li>
+        <li><a href="index.html#kontakt">Kontakt</a></li>
+      </ul>
+    </nav>
+    <div class="actions">
+      <a href="index.html#renewal" class="btn ghost">Odnów</a>
+      <a href="index.html#kontakt" class="btn primary">Porozmawiajmy</a>
+      <button class="hamburger" aria-label="Menu" onclick="var d=document.getElementById('drawer');d.style.display=(d.style.display==='block'?'none':'block')"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- DRAWER -->
+<div class="drawer" id="drawer" onclick="if(event.target===this)this.style.display='none'">
+  <div class="panel" style="width:320px">
+    <div class="top">
+      <strong>Menu</strong>
+      <button class="btn ghost" onclick="document.getElementById('drawer').style.display='none'">Zamknij</button>
+    </div>
+    <nav class="drawerNav">
+      <a href="index.html" onclick="document.getElementById('drawer').style.display='none'">Strona główna</a>
+      <a href="index.html#copilot" onclick="document.getElementById('drawer').style.display='none'">Microsoft 365 + Copilot</a>
+      <a href="index.html#business" onclick="document.getElementById('drawer').style.display='none'">Microsoft 365 Business</a>
+      <a href="index.html#dodatki" onclick="document.getElementById('drawer').style.display='none'">Licencje i dodatki</a>
+      <a href="cennik.html" onclick="document.getElementById('drawer').style.display='none'">Pełen cennik</a>
+      <a href="index.html#csp" onclick="document.getElementById('drawer').style.display='none'">Jak kupić</a>
+      <a href="subskrypcja.html" aria-current="page" onclick="document.getElementById('drawer').style.display='none'">Jak działa subskrypcja</a>
+      <a href="index.html#renewal" onclick="document.getElementById('drawer').style.display='none'">Renewal / Odnówienie</a>
+      <a href="index.html#faq" onclick="document.getElementById('drawer').style.display='none'">FAQ</a>
+      <a href="index.html#kontakt" onclick="document.getElementById('drawer').style.display='none'">Kontakt</a>
+    </nav>
+  </div>
+</div>
+
+<!-- HERO -->
+<section id="sub-hero">
+  <div class="container">
+    <div class="subHero">
+      <span class="pill"><span class="dot"></span> Przewodnik dla klienta</span>
+      <h1>Jak działa subskrypcja Microsoft 365 dla firm</h1>
+      <p class="lead">Przewodnik krok po kroku: model CSP, okres zobowiązania, warianty płatności, ochrona ceny, dokupowanie i rezygnacja z licencji oraz odnowienie subskrypcji. Wszystko co warto wiedziec zanim zdecydujesz sie na Microsoft 365 dla firm.</p>
+      <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-top:22px">
+        <span class="pill" style="background:rgba(232,238,252,.04)"><span class="dot" style="background:#33d17a"></span> Ceny netto w PLN</span>
+        <span class="pill" style="background:rgba(232,238,252,.04)"><span class="dot" style="background:#33d17a"></span> Polska faktura VAT i KSeF</span>
+        <span class="pill" style="background:rgba(232,238,252,.04)"><span class="dot" style="background:#33d17a"></span> Elastyczny model CSP</span>
+      </div>
+    </div>
+
+    <!-- SPIS TREŚĆI -->
+    <nav class="subToc" aria-label="Spis treścii">
+      <a href="#s1"><span class="subTocNum">Sekcja 01</span>Czym jest CSP</a>
+      <a href="#s2"><span class="subTocNum">Sekcja 02</span>Licencje na użytkownika</a>
+      <a href="#s3"><span class="subTocNum">Sekcja 03</span>Co ustalamy przed zakupem</a>
+      <a href="#s4"><span class="subTocNum">Sekcja 04</span>Nowa dzierżawa</a>
+      <a href="#s5"><span class="subTocNum">Sekcja 05</span>Istniejaca dzierżawa</a>
+      <a href="#s6"><span class="subTocNum">Sekcja 06</span>Autoryzacja Valcreon</a>
+      <a href="#s7"><span class="subTocNum">Sekcja 07</span>Okres zobowiązania</a>
+      <a href="#s8"><span class="subTocNum">Sekcja 08</span>Sposob płatności</a>
+      <a href="#s9"><span class="subTocNum">Sekcja 09</span>Cennik Microsoft jest w EUR</a>
+      <a href="#s10"><span class="subTocNum">Sekcja 10</span>Rezygnacja po zakupie</a>
+      <a href="#s11"><span class="subTocNum">Sekcja 11</span>Roczne z płatnościa jednorazowa</a>
+      <a href="#s12"><span class="subTocNum">Sekcja 12</span>Roczne z płatnościa miesięczna</a>
+      <a href="#s13"><span class="subTocNum">Sekcja 13</span>Zobowiązanie miesięczne</a>
+      <a href="#s14"><span class="subTocNum">Sekcja 14</span>Ochrona ceny</a>
+      <a href="#s15"><span class="subTocNum">Sekcja 15</span>Zmiana liczby licencji</a>
+      <a href="#s16"><span class="subTocNum">Sekcja 16</span>Uzupełnienie licencji</a>
+      <a href="#s17"><span class="subTocNum">Sekcja 17</span>Odnówienie i wygaśnięcie</a>
+      <a href="#s18"><span class="subTocNum">Sekcja 18</span>Extended Service Term (EST)</a>
+      <a href="#s19"><span class="subTocNum">Sekcja 19</span>Porownanie wariantow</a>
+      <a href="#s20"><span class="subTocNum">Sekcja 20</span>Jak wybrać wariant</a>
+      <a href="#s21"><span class="subTocNum">Sekcja 21</span>Najwazniejsze zasady w skrócie</a>
+      <a href="#s22"><span class="subTocNum">Sekcja 22</span>Podsumówanie</a>
+    </nav>
+
+    <!-- BLOK 1 -->
+    <details class="subGroup">
+      <summary><span><span class="subGroupTag">A</span>Model zakupowy CSP</span></summary>
+      <div class="subGroupBody">
+
+        <section class="subSection" id="s1">
+          <h3><span class="subNum">1</span>Czym jest CSP</h3>
+          <p>CSP, czyli Cloud Solution Provider, to model zakupu usług Microsoft przez autoryzowanego partnera. W praktyce oznacza to, że klient kupuje subskrypcje Microsoft 365 przez partnera, a partner dostarcza licencje, obsługuje rozliczenie i wystawia fakturę.
+Przy zakupie licencji przez Valcreon klient otrzymuje polską fakturę VAT, również w KSeF. Przy zakupie bezpośrednio w Microsoft fakturującym podmiotem jest Microsoft Ireland Operations Limited, a dokument nie jest wystawiany jako polska faktura w KSeF.
+Partner oraz dystrybutor Microsoft posiadają odpowiednie rejestracje w programach Microsoft i są upoważnieni do odsprzedaży produktów Microsoft.
+</p>
+           <div class="subPlaceholder">W praktyce oznacza to: <strong>polska faktura VAT</strong>, <strong>polski support</strong>. Valcreon kupuje subskrypcje za pośrednictwem polskiego dystrybutora Microsoft i rozlicza je z klientem w Polsce.</div>
+        </section>
+
+        <section class="subSection" id="s2">
+          <h3><span class="subNum">2</span>Licencje na użytkownika</h3>
+          <p>Licencje Microsoft 365 dla firm w ramach zakupionej subskrypcji są licencjami przypisanymi do użytkownika, ale zakup dotyczy liczby licencji dla firmy, a nie trwałego przypisania licencji do jednej konkretnej osoby. Firma ma do dyspozycji określoną pulę licencji i może zmieniać ich przypisanie w dowolnym terminie, na przykład gdy pracownik odchodzi, zmienia stanowisko albo licencja ma zostać przypisana innej osobie.</p>
+          <div class="subPlaceholder">Jeden użytkownik może korzystać z przypisanej licencji jednocześnie na kilku urządzeniach: do 5 komputerów, 5 tabletów i 5 telefonów, o ile dany plan obejmuje aplikacje instalowane lokalnie.</div>
+        </section>
+
+      </div>
+    </details>
+
+    <!-- BLOK 2 -->
+    <details class="subGroup">
+      <summary><span><span class="subGroupTag">B</span>Dzierżawa i przygotowanie</span></summary>
+      <div class="subGroupBody">
+
+        <section class="subSection" id="s3">
+          <h3><span class="subNum">3</span>Co ustalamy przed zakupem</h3>
+          <p>Przed zamówieniem subskrypcji ustalamy, czy firma ma już istniejącą dzierżawę Microsoft 365, jakie produkty są potrzebne, ilu użytkowników ma korzystać z licencji, jaki ma być okres zobowiązania, jaki model płatności wybieramy oraz kto po stronie klienta zatwierdza zakup.</p>
+
+          <div class="subGridTable subGridTable-3">
+            <div class="subGridHead">Informacja</div>
+            <div class="subGridHead">Nowa dzierżawa</div>
+            <div class="subGridHead">Istniejaca dzierżawa</div>
+
+            <div><strong>Status dzierżawy</strong></div>
+            <div>Zakladamy od zera</div>
+            <div>Klient już posiada</div>
+
+            <div><strong>Nazwa dzierżawy</strong></div>
+            <div>Ustalamy razem</div>
+            <div>Klient przekazuje</div>
+
+            <div><strong>Domena onmicrosoft.com</strong></div>
+            <div>Wybieramy nazwe firmowa</div>
+            <div>Już istnieje</div>
+
+            <div><strong>Identyfikator dzierżawy</strong></div>
+            <div>Powstaje przy zalozeniu</div>
+            <div>Klient przekazuje Tenant ID</div>
+
+            <div><strong>Dane firmy</strong></div>
+            <div>NIP, adres, dane kontaktowe</div>
+            <div>NIP, adres, dane kontaktowe</div>
+
+            <div><strong>Zakres zamowienia</strong></div>
+            <div>Liczba licencji, plany, wariant zobowiązania</div>
+            <div>Liczba licencji, plany, wariant zobowiązania</div>
+
+            <div><strong>Osoba decyzyjna</strong></div>
+            <div>Wskazanie administratora i osoby odpowiedzialnej</div>
+            <div>Wskazanie osoby odpowiedzialnej, potwierdzenie dostepu administracyjnego</div>
+          </div>
+        </section>
+
+        <section class="subSection" id="s4">
+          <h3><span class="subNum">4</span>Nowa dzierżawa</h3>
+          <p>Przy zakładaniu nowej dzierżawy (tenanta) Microsoft 365 trzeba wybrać techniczną nazwę dzierżawy, która tworzy domyślną domenę w formacie nazwadzierżawy.onmicrosoft.com. To nie jest adres strony internetowej firmy ani docelowy adres e-mail, ale trwały identyfikator środowiska Microsoft 365. 
+Nazwę warto wybrać świadomie, ponieważ będzie widoczna w panelach administracyjnych, konfiguracji technicznej, integracjach i niektórych komunikatach systemowych. Po wybraniu nazwy dzierżawy nie należy zakładać, że będzie można ją w przyszłości łatwo zmienić. Zmiana nazwy środowiska może być niemożliwa albo wiązać się z istotnymi komplikacjami administracyjnymi i technicznymi, dlatego najlepiej od razu użyć krótkiej, neutralnej i trwałej nazwy firmy lub marki, bez polskich znaków, spacji, znaków specjalnych i tymczasowych skrótów.</p>
+
+          <div class="subPlaceholder">Przed wyborem nazwy można sprawdzić dostępność domeny onmicrosoft.com w narzędziu: https://o365.rocks. Narzędzie firmy trzeciej. Nie wymaga logowania ani danych firmy. Alternatywa bez zewnętrznych narzędzi: wpisz nazwafirmy.sharepoint.com w przeglądarce – ekran logowania oznacza, że nazwa jest zajęta. Dzięki temu można uniknąć sytuacji, w której preferowana nazwa dzierżawy jest już zajęta i trzeba szybko wybierać nazwę zastępczą.</div>
+
+          <p>Dla nowego klienta proces obejmuje potwierdzenie danych firmy, wybór planu Microsoft 365, ustalenie liczby licencji, okresu zobowiązania i sposobu płatności oraz przygotowanie zamówienia. Jeżeli klient wybiera zobowiązanie roczne z płatnością jednorazową, subskrypcję uruchamiamy po otrzymaniu przedpłaty.</p>
+        </section>
+
+        <section class="subSection" id="s5">
+          <h3><span class="subNum">5</span>Istniejaca dzierżawa</h3>
+          <p>Dla klienta, który ma już istniejącą dzierżawę Microsoft 365, najpierw sprawdzamy jej nazwę, domyślną domenę onmicrosoft.com, identyfikator dzierżawy oraz obecny kanał zakupu licencji. Dopiero potem ustalamy, czy nowe licencje mają zostać dodane do istniejącej dzierżawy, czy wymagane są dodatkowe działania administracyjne.
+Najprostszy sposób rozpoznania istniejącej dzierżawy to zalogowanie się przez administratora do centrum administracyjnego Microsoft 365 pod adresem admin.microsoft.com. W sekcji dotyczącej organizacji można sprawdzić nazwę dzierżawy, domyślną domenę w formacie nazwa.onmicrosoft.com oraz identyfikator dzierżawy. Te informacje pozwalają poprawnie przygotować zamówienie i uniknąć utworzenia niepotrzebnej drugiej dzierżawy.
+Orientacyjny czas uruchomienia zależy od rodzaju zamówienia. Utworzenie i przygotowanie nowej dzierżawy Microsoft 365 zajmuje zwykle 1–2 dni robocze od potwierdzenia danych i warunków zamówienia. Domówienie nowych licencji do istniejącej dzierżawy trwa maksymalnie do 8 godzin roboczych, a w praktyce najczęściej jest realizowane do około 2 godzin.
+</p>
+          <div class="subPlaceholder">Do sprawdzenia w <strong>admin.microsoft.com</strong>: nazwa dzierżawy, domyślna domena onmicrosoft.com i identyfikator dzierżawy. Czas realizacji: nowa dzierżawa <strong>1–2 dni robocze</strong>, dokupienie licencji do istniejącej dzierżawy zwykle <strong>do 2 godzin</strong>, maksymalnie 8 godzin.</div>
+        </section>
+
+        <section class="subSection" id="s6">
+          <h3><span class="subNum">6</span>Autoryzacja Valcreon</h3>
+          <p>Aby Valcreon mógł dostarczać i rozliczać subskrypcje Microsoft 365 w istniejącej dzierżawie klienta, klient musi zaakceptować relację partnerską typu reseller relationship. Jest to autoryzacja handlowa, która pozwala przypisać Valcreon jako partnera sprzedaży dla danej dzierżawy i zamawiać licencje przez kanał CSP.
+Autoryzacja dla dystrybutora jest elementem procesu sprzedażowego w kanale CSP. Dystrybutor Microsoft obsługuje zaplecze zamówienia, dostępność produktów i rozliczenie z partnerem. Klient nadal współpracuje handlowo z Valcreon, a Valcreon odpowiada za przygotowanie zamówienia, fakturowanie i kontakt z klientem.
+Autoryzacja do administracji dzierżawą jest osobną i opcjonalną decyzją klienta. Oznacza ona przyznanie Valcreon dostępu administracyjnego do środowiska Microsoft 365 klienta, na przykład w celu wykonania konfiguracji, zmian technicznych, migracji albo bieżących prac administracyjnych.
+Relacja sprzedażowa nie daje Valcreon automatycznego pełnego dostępu administracyjnego do środowiska klienta. Dostęp administracyjny wymaga osobnej decyzji i powinien wynikać z ustalonego zakresu prac.
+Sama relacja sprzedażowa nie oznacza automatycznie, że Valcreon wykonuje bezpłatną administrację środowiskiem klienta. Z reguły czynności administracyjne w dzierżawie klienta są rozliczane osobno, zgodnie z ustalonym zakresem usługi, zleceniem lub umową obsługową.
+</p>
+          <div class="subPlaceholder"><strong>Reseller relationship</strong> to autoryzacja handlowa – nie daje partnerowi dostępu do konfiguracji ani danych. Dostęp administracyjny (GDAP) to <strong>osobna i opcjonalna</strong> decyzja klienta, powiązana z konkretnym zakresem prac i rozliczana zgodnie z umową.</div>
+        </section>
+
+      </div>
+    </details>
+
+    <!-- BLOK 3 -->
+    <details class="subGroup">
+      <summary><span><span class="subGroupTag">C</span>Okres zobowiązania i płatności</span></summary>
+      <div class="subGroupBody">
+
+        <section class="subSection" id="s7">
+          <h3><span class="subNum">7</span>Okres zobowiązania: miesięczny albo roczny</h3>
+          <p>Przy zakupie subskrypcji klient wybiera okres zobowiązania. Najczęściej są to dwa warianty: zobowiązanie miesięczne albo zobowiązanie roczne. To okres zobowiązania decyduje o tym, jak długo trzeba utrzymać subskrypcję i jakie są możliwości jej anulowania.
+Zobowiązanie miesięczne można traktować jako elastyczne, ponieważ klient ma prawo zrezygnować po zakończeniu danego miesiąca rozliczeniowego. Zobowiązanie roczne daje lepszą cenę, ale oznacza obowiązek utrzymania zamówionej liczby licencji przez 12 miesięcy.
+W ramach jednej firmy można mieszać różne okresy zobowiązania i różne modele płatności. Oznacza to, że część licencji może być kupiona w zobowiązaniu rocznym, część w miesięcznym, a różne produkty mogą mieć różne rocznice odnowienia. Możliwe jest również posiadanie różnych zobowiązań dla tego samego typu licencji, na przykład część licencji Microsoft 365 Business Standard jako zobowiązanie roczne dla stałych pracowników i część jako zobowiązanie miesięczne dla użytkowników projektowych lub tymczasowych.</p>
+
+        </section>
+
+        <section class="subSection" id="s8">
+          <h3><span class="subNum">8</span>Sposob płatności</h3>
+          <p>Subskrypcję roczną można opłacić jednorazowo z góry albo w ratach miesięcznych. Płatność jednorazowa jest najtańszym wariantem. Płatność miesięczna przy zobowiązaniu rocznym jest wygodniejsza operacyjnie, ale droższa od płatności z góry.
+W uproszczeniu: najniższa cena dotyczy zobowiązania rocznego z płatnością jednorazową, zobowiązanie roczne z płatnością miesięczną jest droższe o 3%, a zobowiązanie miesięczne jest droższe o 20%, ponieważ daje największą elastyczność.
+</p>
+          <div class="subPlaceholder"><strong>Roczne z góry</strong> = najniższa cena. <strong>Roczne w ratach</strong> = +3%. <strong>Miesięczne</strong> = +20% w zamian za elastyczność. Faktury VAT wystawiane w PLN – jednorazowo albo co miesiąc, w zależności od wariantu.</div>
+        </section>
+
+        <section class="subSection" id="s9">
+          <h3><span class="subNum">9</span>Cennik Microsoft jest w EUR</h3>
+          <p>Ceny katalogowe Microsoft dla subskrypcji CSP są publikowane w EUR. Przy rozliczeniu w złotówkach kwota na fakturze może zależeć od kursu waluty przyjętego do rozliczenia.<br><br>W przypadku zobowiązania rocznego z płatnością miesięczną każda rata może być przeliczana z EUR według aktualnego kursu sprzedaży NBP. Oznacza to, że miesięczna kwota w PLN może się różnić w kolejnych miesiącach, mimo że cena bazowa w EUR pozostaje taka sama.</p>
+               <p><a href="cennik.html">Zobacz aktualny cennik Microsoft 365 w PLN</a> - z wszystkimi wariantami płatności.</p>
+        </section>
+
+        <section class="subSection" id="s10">
+          <h3><span class="subNum">10</span>Rezygnacja po zakupie</h3>
+          <p>Po zakupie subskrypcji obowiązuje krótki okres, w którym można ją anulować i ponieść koszt tylko za wykorzystane dni. W Valcreon przyjmujemy bezpiecznie 5 dni kalendarzowych od zakupu lub odnowienia subskrypcji, ponieważ decyzje klientów często wymagają dodatkowego czasu operacyjnego. Po tym terminie subskrypcji nie można anulować przed końcem okresu zobowiązania.
+Oznacza to, że jeżeli klient zamówi zobowiązanie roczne, po upływie okresu anulowania firma pozostaje zobowiązana do opłacenia całego wybranego okresu. Przy płatności miesięcznej nie jest to umowa miesięczna, tylko zobowiązanie roczne rozłożone na 12 rat.
+</p>
+          <div class="subPlaceholder"><strong>5 dni kalendarzowych</strong> na anulowanie od zakupu lub odnowienia. Po tym terminie zobowiązanie roczne trzeba opłacić do końca okresu – także przy płatności miesięcznej (to nie jest umowa miesięczna, tylko 12 rat rocznego zobowiązania).</div>
+        </section>
+
+      </div>
+    </details>
+
+    <!-- BLOK 4 -->
+    <details class="subGroup">
+      <summary><span><span class="subGroupTag">D</span>W trakcie subskrypcji</span></summary>
+      <div class="subGroupBody">
+
+        <section class="subSection" id="s11">
+          <h3><span class="subNum">11</span>Roczne z płatnościa jednorazowa</h3>
+          <p>Subskrypcję roczną z płatnością jednorazową uruchamiamy po otrzymaniu przedpłaty za pierwszy rok. Jest to najprostszy i najtańszy wariant rozliczenia, ponieważ klient płaci z góry za cały okres i nie ponosi ryzyka miesięcznych różnic kursowych.</p>
+          <div class="subPlaceholder">Najprostszy i <strong>najtańszy</strong> wariant rozliczenia. Uruchamiamy po otrzymaniu przedpłaty za pierwszy rok. Brak ryzyka miesięcznych różnic kursowych EUR/PLN – kwota jest ustalona z góry.</div>
+        </section>
+
+        <section class="subSection" id="s12">
+          <h3><span class="subNum">12</span>Roczne z płatnościa miesięczna</h3>
+          <p>Roczne zobowiązanie z płatnością miesięczną oznacza, że klient zamawia subskrypcję na 12 miesięcy, ale opłaca ją w 12 ratach. Ponieważ ta forma rozliczenia stanowi długoterminowe zobowiązanie klienta, wymaga podpisania umowy na subskrypcję. Niezależnie od późniejszej decyzji biznesowej klient ma obowiązek opłacenia wszystkich rat wynikających z zamówionego zobowiązania.
+Przykład: jeżeli miesięczna cena wynosi 100 PLN netto za użytkownika, a klient zamawia 10 licencji w zobowiązaniu rocznym z płatnością miesięczną, całkowite zobowiązanie firmy wynosi 12 × 10 × 100 PLN netto, czyli 12 000 PLN netto, nawet jeśli faktury są wystawiane co miesiąc.
+</p>
+          <div class="subPlaceholder">12 miesięcy zobowiązania, 12 rat. Każda rata przeliczana z EUR wg <strong>aktualnego kursu NBP</strong> – kwota w PLN może się różnić w kolejnych miesiącach. Wymaga podpisanej umowy na subskrypcję.</div>
+        </section>
+
+        <section class="subSection" id="s13">
+          <h3><span class="subNum">13</span>Zobowiązanie miesięczne</h3>
+          <p>Zobowiązanie miesięczne odnawia się automatycznie co miesiąc aż do odwołania. Do momentu anulowania subskrypcji klient ma obowiązek opłacać kolejne miesiące. Ten wariant jest droższy, ale daje największą elastyczność, ponieważ pozwala zakończyć korzystanie z licencji po każdym miesiącu.</p>
+          <div class="subPlaceholder">Odnawia się automatycznie co miesiąc, aż do anulowania. <strong>Największa elastyczność</strong>, ale cena wyższa o około 20% względem wariantu rocznego z góry. Klient ma obowiązek opłacać kolejne miesiące do momentu wypowiedzenia.</div>
+        </section>
+
+        <section class="subSection" id="s14">
+          <h3><span class="subNum">14</span>Ochrona ceny</h3>
+          <p>Ochrona ceny dotyczy tylko zobowiązania rocznego. Jeżeli Microsoft zmieni cennik w trakcie trwania rocznego okresu zobowiązania, cena w EUR pozostaje co do zasady niezmienna do końca bieżącego okresu.
+W zobowiązaniu miesięcznym cena może zmienić się po zmianie cennika Microsoft, ponieważ subskrypcja odnawia się co miesiąc. Klient zyskuje elastyczność, ale nie ma takiej samej ochrony ceny jak w wariancie rocznym.
+</p>
+          <div class="subPlaceholder">Ochrona ceny działa <strong>tylko w wariancie rocznym</strong>. W zobowiązaniu miesięcznym cena może zmienić się po każdej zmianie cennika Microsoft, bo subskrypcja odnawia się co miesiąc. Elastyczność kosztem stabilności ceny.</div>
+        </section>
+
+        <section class="subSection" id="s15">
+          <h3><span class="subNum">15</span>Zmiana liczby licencji</h3>
+          <p>W trakcie zobowiązania rocznego można zwiększać liczbę licencji. Można też zmieniać wybrane licencje na wyższe plany Microsoft 365. Nowe licencje są zwykle dopasowywane do końca bieżącego okresu zobowiązania.
+Nie można natomiast dowolnie zmniejszyć liczby licencji w trakcie rocznego okresu zobowiązania. Zmniejszenie liczby licencji jest możliwe dopiero przy odnowieniu subskrypcji albo w okresie anulowania po zakupie lub odnowieniu.
+</p>
+          <div class="subPlaceholder">W trakcie zobowiązania rocznego można <strong>zwiększać liczbę licencji</strong> i <strong>przechodzić na wyższe plany</strong> (np. Basic → Standard). Nie można natomiast dowolnie zmniejszyć liczby licencji – redukcja jest możliwa dopiero przy odnowieniu.</div>
+        </section>
+
+        <section class="subSection" id="s16">
+          <h3><span class="subNum">16</span>Elastycznośc CSP przy dokupowaniu</h3>
+          <p>Zakup przez Valcreon w modelu CSP daje większą elastyczność operacyjną niż samodzielny zakup bezpośrednio w Microsoft. Jeżeli w trakcie roku do firmy dołączają nowi użytkownicy, można dokupić dla nich dodatkowe licencje bez czekania do kolejnego odnowienia.
+Dodatkowe licencje są rozliczane tylko za okres od momentu ich uruchomienia do najbliższej rocznicy lub końca bieżącego okresu zobowiązania. Oznacza to, że firma nie musi płacić pełnej rocznej kwoty za licencję dodaną w środku okresu, tylko proporcjonalnie za pozostały czas.
+W tym samym modelu można zamówić również zupełnie inne produkty Microsoft, na przykład dodatkowe aplikacje, usługi bezpieczeństwa albo licencje dla nowych ról w organizacji. Takie produkty także mogą zostać uruchomione w trakcie roku i rozliczone tylko do wspólnej rocznicy odnowienia.
+</p>
+          <div class="subPlaceholder">Dokupione licencje rozliczane są <strong>proporcjonalnie</strong> do najbliższej rocznicy odnowienia. Można też dodać zupełnie nowe produkty Microsoft (Copilot, Defender, Intune) do wspólnego okresu subskrypcji – bez czekania do końca umowy.</div>
+        </section>
+
+      </div>
+    </details>
+
+    <!-- BLOK 5 -->
+    <details class="subGroup">
+      <summary><span><span class="subGroupTag">E</span>Odnowienie i ryzyko</span></summary>
+      <div class="subGroupBody">
+
+        <section class="subSection" id="s17">
+          <h3><span class="subNum">17</span>Odnowienie i wygaśnięcie</h3>
+          <p>Subskrypcje Microsoft 365 trzeba odnawiać po zakończeniu okresu zobowiązania. W Valcreon subskrypcje nie odnawiają się automatycznie na kolejny okres bez decyzji klienta. Z odpowiednim wyprzedzeniem przed rocznicą ustalamy z klientem, co robimy dalej: odnawiamy subskrypcję, zmieniamy liczbę licencji, przechodzimy na inne plany albo kończymy korzystanie z wybranych usług.
+Po wygaśnięciu subskrypcji administrator ma jeszcze ograniczony czas na dostęp administracyjny i odzyskanie danych. W zależności od usługi i etapu wygaszenia okres ten może wynosić od około 30 do 90 dni. Po zakończeniu tego procesu dane mogą zostać trwale usunięte.
+</p>
+          <div class="subPlaceholder">W Valcreon subskrypcje <strong>nie odnawiają się automatycznie</strong> bez decyzji klienta. Po wygaśnięciu administrator ma jeszcze <strong>30–90 dni</strong> na dostęp administracyjny i odzyskanie danych, w zależności od usługi.</div>
+        </section>
+
+        <section class="subSection" id="s18">
+          <h3><span class="subNum">18</span>Extended Service Term (EST)</h3>
+          <p>EST, czyli Extended Service Term, to mechanizm przedłużenia dostępu do usługi po zakończeniu standardowego okresu subskrypcji, gdy klient nie odnowił jej na czas. W uproszczeniu działa jak awaryjny okres techniczny, który pomaga uniknąć natychmiastowej przerwy w działaniu usług.
+EST nie powinien być traktowany jako standardowy sposób korzystania z licencji. Jest rozwiązaniem wyjątkowym i wiąże się z wyższym kosztem niż standardowe zobowiązanie roczne. W praktyce należy przyjąć, że koszt może być powiększony o dopłatę za płatność miesięczną oraz dodatkowy koszt przedłużenia, łącznie około 23% względem najtańszego wariantu rocznego z płatnością z góry. Dlatego EST traktujemy jako mechanizm awaryjny, a nie planowany sposób odnawiania subskrypcji.
+</p>
+          <div class="subPlaceholder">EST = koszt około <strong>+23%</strong> względem najtańszego wariantu rocznego z płatnością z góry. Traktujemy jako <strong>mechanizm awaryjny</strong>, nie standardowy sposób odnawiania. Warto odnowić subskrypcję na czas, żeby uniknąć EST.</div>
+        </section>
+
+        <section class="subSection" id="s19">
+          <h3><span class="subNum">19</span>Porownanie wariantow</h3>
+          <p>Ponizej porownanie trzech wariantow subskrypcji Microsoft 365 dostępnych w CSP.</p>
+
+          <div class="subGridTable subGridTable-5">
+            <div class="subGridHead">Wariant</div>
+            <div class="subGridHead">Cena</div>
+            <div class="subGridHead">Elastycznośc</div>
+            <div class="subGridHead">Ochrona ceny</div>
+            <div class="subGridHead">Dla kogo</div>
+
+            <div><strong>Roczne z gory</strong></div>
+            <div>Najniższa</div>
+            <div>Ograniczona</div>
+            <div>Tak</div>
+            <div>Stali pracownicy, przewidywalny budzet</div>
+
+            <div><strong>Roczne miesięcznie</strong></div>
+            <div>+3 procent</div>
+            <div>Ograniczona</div>
+            <div>Tak (w EUR)</div>
+            <div>Firmy chcace rozlożyc koszt w czasie</div>
+
+            <div><strong>Miesięczne</strong></div>
+            <div>+20 procent</div>
+            <div>Wysoka</div>
+            <div>Nie</div>
+            <div>Użytkownicy tymczasowi, sezonowi, projektowi</div>
+          </div>
+        </section>
+
+        <section class="subSection" id="s20">
+          <h3><span class="subNum">20</span>Jak wybrać wariant</h3>
+          <p>Dla stałych pracowników najczęściej najlepszym wyborem jest zobowiązanie roczne, ponieważ daje niższą cenę i ochronę ceny. Dla pracowników tymczasowych, projektowych lub sezonowych lepsze może być zobowiązanie miesięczne, ponieważ pozwala szybciej zmniejszyć koszty.
+Valcreon pomaga dobrać wariant subskrypcji do realnego sposobu pracy firmy: liczby stałych użytkowników, planowanych zmian zatrudnienia, budżetu, potrzeb bezpieczeństwa oraz ryzyka związanego z długim zobowiązaniem.
+Za decyzję zakupową odpowiada klient. Valcreon pomaga dobrać wariant, wyjaśnia konsekwencje zobowiązania i porządkuje informacje, ale to klient zatwierdza liczbę licencji, produkty, okres zobowiązania, sposób płatności oraz decyzję o odnowieniu.
+Przykład praktyczny: firma ma 25 osób. Dla 20 stałych pracowników wybiera zobowiązanie roczne, ponieważ jest tańsze i chroni cenę. Dla 3 osób projektowych wybiera zobowiązanie miesięczne, ponieważ nie wiadomo, jak długo będą potrzebne. W trakcie roku firma dokupuje 2 dodatkowe licencje dla nowych pracowników i płaci za nie tylko od momentu uruchomienia do najbliższej rocznicy. Przed rocznicą Valcreon wspólnie z klientem porządkuje licencje i ustala, co odnowić, zmienić albo zakończyć.
+</p>
+          <div class="subPlaceholder"><strong>Roczne z góry</strong> dla stałych pracowników – tańsze i chroni cenę. <strong>Miesięczne</strong> dla projektowych, sezonowych, tymczasowych. W <strong>jednej firmie można mieszać</strong> oba warianty i różne plany, dopasowując subskrypcje do realnej struktury zatrudnienia.</div>
+        </section>
+
+        <section class="subSection" id="s21">
+          <h3><span class="subNum">21</span>Najwazniejsze zasady w skrócie</h3>
+          <ul>
+  <li><strong>Zobowiązanie roczne = niższa cena</strong>, ale liczba licencji jest zamrożona na 12 miesięcy (można dokupić, nie można zredukować).</li>
+  <li><strong>Zobowiązanie miesięczne = elastyczność</strong>, ale cena wyższa o około 20 procent.</li>
+  <li><strong>Okno rezygnacji</strong> – masz 5 dni od zakupu na wycofanie się bez konsekwencji.</li>
+  <li><strong>Cennik jest w EUR</strong> – w PLN widzisz cenę konsumeryzowaną, zamrożoną w wariancie rocznym.</li>
+  <li><strong>Ochrona ceny</strong> działa tylko w wariancie rocznym.</li>
+  <li><strong>Dokupowanie</strong> licencji można wykonać w każdym momencie, w obu wariantach.</li>
+  <li><strong>Faktura VAT w PLN</strong> – z polską obsługą i wsparciem, także w KSeF.</li>
+  <li><strong>Zakup:</strong> licencje kupowane przez Valcreon są dostarczane w modelu CSP, klient otrzymuje polską fakturę VAT.</li>
+  <li><strong>Dzierżawa:</strong> przed zamówieniem trzeba potwierdzić, czy firma ma już dzierżawę Microsoft 365 i kto zatwierdza zakup.</li>
+  <li><strong>Autoryzacja:</strong> w istniejącej dzierżawie klient akceptuje relację partnerską reseller relationship; autoryzacja administracyjna jest osobna i opcjonalna.</li>
+  <li><strong>Licencje:</strong> firma kupuje określoną pulę licencji i może zmieniać ich przypisanie między użytkownikami.</li>
+  <li><strong>Zobowiązania:</strong> w jednej firmie można mieszać produkty, okresy zobowiązania i płatności.</li>
+  <li><strong>Zmiany:</strong> w trakcie rocznego zobowiązania można zwiększać liczbę licencji i przechodzić na wyższe plany, ale nie można swobodnie zmniejszać.</li>
+  <li><strong>Rozliczenie:</strong> najtańszy wariant to zobowiązanie roczne z płatnością z góry.</li>
+  <li><strong>Elastyczność CSP:</strong> dodatkowe licencje i produkty można uruchamiać w trakcie roku i rozliczać tylko do najbliższej rocznicy.</li>
+  <li><strong>Odnowienie:</strong> w Valcreon kolejny okres wymaga decyzji klienta i jest ustalany z wyprzedzeniem przed rocznicą.</li>
+  <li><strong>Ryzyko:</strong> brak odnowienia oznacza ryzyko utraty dostępu do usług i danych, a EST jest wyłącznie mechanizmem awaryjnym.</li>
+</ul>
+        </section>
+
+        <section class="subSection" id="s22">
+          <h3><span class="subNum">22</span>Podsumówanie</h3>
+          <p>Celem Valcreon jest takie dobranie subskrypcji Microsoft 365, aby firma nie przepłacała, nie traciła potrzebnej elastyczności i nie podejmowała przypadkowych zobowiązań licencyjnych. Dlatego przed zakupem ustalamy potrzeby, przed rocznicą porządkujemy subskrypcje, a w trakcie roku pomagamy dokładać licencje i produkty wtedy, gdy są realnie potrzebne.</p>
+          <div class="subPlaceholder">Cel: firma <strong>nie przepłaca</strong>, <strong>nie traci elastyczności</strong>, <strong>nie podejmuje przypadkowych zobowiązań</strong>. Przed zakupem ustalamy potrzeby, przed rocznicą porządkujemy subskrypcje, w trakcie roku pomagamy dokładać licencje wtedy, gdy są realnie potrzebne.</div>
+        </section>
+
+      </div>
+    </details>
+
+    <!-- CTA KONCOWE -->
+    <div class="subCta" id="sub-cta">
+      <h2>Nie wiesz, który wariant subskrypcji wybrać?</h2>
+      <p>15 minut rozmowy z polskim doradca Microsoft CSP. Pomożemy dobrac okres zobowiązania i model płatności pod Twója firme. Bez sprzedazowego ciśnienia.</p>
+      <div class="ctaButtons">
+        <a class="btn primary" href="index.html#kontakt">Umów rozmowe</a>
+        <a class="btn ghost" href="cennik.html">Zobacz cennik</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footCta">
+      <h3>Masz już Microsoft 365? Przenieś licencje do polskiego CSP.</h3>
+      <p>Ten sam Microsoft 365, ta sama cena, tylko z polskim wsparciem, fakturą PLN i elastycznością CSP. Migracja bez przerwy w usłudze.</p>
+      <a class="btn primary" href="index.html#kontakt">Umów rozmowę o migracji do CSP</a>
+    </div>
+
+    <div class="footGridV2">
+      <div>
+        <div class="footBrand">
+          <img src="logo-32.png" alt="microsoft365.com.pl">
+          <div>
+            <div class="footBrandName">microsoft365.com.pl</div>
+            <div class="footBrandTag">Microsoft 365 · Copilot · Security</div>
+          </div>
+        </div>
+        <p class="fine">Niezależny portal partnera Microsoft CSP.<br>Serwis prowadzony przez Valcreon Sp. z o.o.<br>Microsoft 365, Copilot, Teams to zastrzeżone znaki towarowe Microsoft.</p>
+      </div>
+      <div>
+        <h4 class="footTitle">Licencje</h4>
+        <ul class="footList">
+          <li><a href="index.html#copilot">Copilot Business</a></li>
+          <li><a href="index.html#business">Microsoft 365 Business</a></li>
+          <li><a href="cennik.html">Pełen cennik</a></li>
+          <li><a href="index.html#dodatki">Licencje i dodatki</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footTitle">Jesteś już w Microsoft?</h4>
+        <ul class="footList">
+          <li><a href="index.html#csp">Zmiana partnera CSP</a></li>
+          <li><a href="index.html#renewal">Renewal / Odnowienie</a></li>
+          <li><a href="index.html#faq">FAQ</a></li>
+          <li><a href="https://valcreon.com" target="_blank" rel="noopener">Valcreon CSP Partner</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footBottom">
+      <div class="fine">© <span id="y"></span> Valcreon Sp. z o.o. · NIP 5273196631 · Wszelkie prawa zastrzeżone.</div>
+      <div class="footLinks">
+        <a href="politykaprywatnosci.html">Polityka prywatności</a><span>·</span>
+        <a href="regulamin.html">Regulamin</a><span>·</span>
+        <a href="rodo.html">RODO</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ================= COOKIE BANNER ================= -->
+<div id="cookieBanner" role="dialog" aria-labelledby="cookieTitle" aria-describedby="cookieDesc">
+  <div class="cookieHead">
+    <div class="cookieIco">
+      <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10c0-.46-.03-.92-.1-1.36a4 4 0 0 1-5.54-5.54A10 10 0 0 0 12 2z"/><circle cx="8.5" cy="10.5" r="1"/><circle cx="14" cy="14" r="1"/><circle cx="10" cy="16" r="1"/></svg>
+    </div>
+    <div>
+      <div id="cookieTitle" class="cookieTitle">Ciasteczka i prywatność</div>
+      <p id="cookieDesc" class="cookieDesc">
+        Używamy plików cookies, aby strona działała prawidłowo, mierzyć ruch (Google Analytics) i ulepszać treści. Możesz wybrać, na co się zgadzasz. Szczegóły w
+        <a href="https://valcreon.com/politykaprywatnosci.html" target="_blank" rel="noopener noreferrer">polityce prywatności</a>
+      </p>
+    </div>
+  </div>
+  <div class="cookieActions">
+    <button class="cookieBtn primary" onclick="acceptAllCookies()">Akceptuj wszystkie</button>
+    <button class="cookieBtn" onclick="acceptNecessaryCookies()">Tylko niezbędne</button>
+    <button class="cookieBtn" onclick="openCookieSettings()">Ustawienia</button>
+    <button class="cookieBtn settings" onclick="openCookieSettings()" style="display:none;">Dostosuj wybór</button>
+  </div>
+</div>
+
+<!-- ================= COOKIE SETTINGS MODAL ================= -->
+<div id="cookieModal" role="dialog" aria-labelledby="cookieModalTitle">
+  <div class="cookieModalBox">
+    <h3 id="cookieModalTitle">Ustawienia ciasteczek</h3>
+    <p>Wybierz, na które kategorie cookies wyrażasz zgodę. Możesz zmienić swój wybór w każdej chwili klikając ikonę w lewym dolnym rogu.</p>
+
+    <div class="cookieCategory">
+      <div class="cookieCategoryHead">
+        <div>
+          <strong>Niezbędne</strong>
+          <p>Wymagane do działania strony – formularze, sesja, bezpieczeństwo. Nie można ich wyłączyć.</p>
+        </div>
+        <input type="checkbox" class="cookieToggle" checked disabled aria-label="Niezbędne – zawsze włączone">
+      </div>
+    </div>
+
+    <div class="cookieCategory">
+      <div class="cookieCategoryHead">
+        <div>
+          <strong>Analityczne (Google Analytics 4)</strong>
+          <p>Pomagają zrozumieć, jak korzystasz ze strony – anonimowo, bez identyfikacji osobowej. Dzięki nim ulepszamy treści.</p>
+        </div>
+        <input type="checkbox" class="cookieToggle" id="cookieAnalytics" aria-label="Analityczne">
+      </div>
+    </div>
+
+    <div class="cookieCategory">
+      <div class="cookieCategoryHead">
+        <div>
+          <strong>Marketingowe</strong>
+          <p>Pozwalają pokazywać Ci trafniejsze reklamy Valcreon w innych miejscach (Meta, LinkedIn). Wykorzystywane okazjonalnie.</p>
+        </div>
+        <input type="checkbox" class="cookieToggle" id="cookieMarketing" aria-label="Marketingowe">
+      </div>
+    </div>
+
+    <div class="cookieModalActions">
+      <button class="cookieBtn" onclick="closeCookieSettings()">Anuluj</button>
+      <button class="cookieBtn primary" onclick="saveCookieSettings()">Zapisz wybór</button>
+    </div>
+  </div>
+</div>
+
+<!-- ================= FLOATING REOPEN ICON ================= -->
+<button id="cookieReopen" onclick="reopenCookieBanner()" aria-label="Ustawienia ciasteczek" title="Ustawienia ciasteczek">
+  <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10c0-.46-.03-.92-.1-1.36a4 4 0 0 1-5.54-5.54A10 10 0 0 0 12 2z"/><circle cx="8.5" cy="10.5" r="1"/><circle cx="14" cy="14" r="1"/><circle cx="10" cy="16" r="1"/></svg>
+</button>
+
+<!-- ================= COOKIE LOGIC ================= -->
+<script>
+(function(){
+  const CONSENT_KEY='valcreon_cookie_consent';
+  const CONSENT_VERSION='1';
+  const CONSENT_DAYS=365;
+
+  // Google Consent Mode v2 – default: deny all
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  gtag('consent','default',{
+    'analytics_storage':'denied',
+    'ad_storage':'denied',
+    'ad_user_data':'denied',
+    'ad_personalization':'denied',
+    'functionality_storage':'granted',
+    'security_storage':'granted'
+  });
+
+  function getStoredConsent(){
+    try{
+      const raw=localStorage.getItem(CONSENT_KEY);
+      if(!raw) return null;
+      const data=JSON.parse(raw);
+      if(data.v!==CONSENT_VERSION) return null;
+      if(Date.now()-data.t > CONSENT_DAYS*24*60*60*1000) return null;
+      return data;
+    }catch(e){return null;}
+  }
+
+  function saveConsent(analytics,marketing){
+    const data={v:CONSENT_VERSION,t:Date.now(),analytics:analytics,marketing:marketing};
+    localStorage.setItem(CONSENT_KEY,JSON.stringify(data));
+    applyConsent(analytics,marketing);
+    document.getElementById('cookieBanner').classList.remove('show');
+    document.getElementById('cookieModal').classList.remove('show');
+    document.getElementById('cookieReopen').classList.add('show');
+  }
+
+  function applyConsent(analytics,marketing){
+    gtag('consent','update',{
+      'analytics_storage':analytics?'granted':'denied',
+      'ad_storage':marketing?'granted':'denied',
+      'ad_user_data':marketing?'granted':'denied',
+      'ad_personalization':marketing?'granted':'denied'
+    });
+  }
+
+  window.acceptAllCookies=function(){saveConsent(true,true);};
+  window.acceptNecessaryCookies=function(){saveConsent(false,false);};
+  window.openCookieSettings=function(){
+    const stored=getStoredConsent();
+    document.getElementById('cookieAnalytics').checked=stored?stored.analytics:false;
+    document.getElementById('cookieMarketing').checked=stored?stored.marketing:false;
+    document.getElementById('cookieModal').classList.add('show');
+  };
+  window.closeCookieSettings=function(){
+    document.getElementById('cookieModal').classList.remove('show');
+  };
+  window.saveCookieSettings=function(){
+    const a=document.getElementById('cookieAnalytics').checked;
+    const m=document.getElementById('cookieMarketing').checked;
+    saveConsent(a,m);
+  };
+  window.reopenCookieBanner=function(){
+    document.getElementById('cookieReopen').classList.remove('show');
+    document.getElementById('cookieBanner').classList.add('show');
+  };
+
+  // Init on page load
+  document.addEventListener('DOMContentLoaded',function(){
+    const stored=getStoredConsent();
+    if(stored){
+      applyConsent(stored.analytics,stored.marketing);
+      document.getElementById('cookieReopen').classList.add('show');
+    }else{
+      setTimeout(function(){
+        document.getElementById('cookieBanner').classList.add('show');
+      },800);
+    }
+  });
+
+  // Close modal on backdrop click
+  document.getElementById('cookieModal').addEventListener('click',function(e){
+    if(e.target===this) closeCookieSettings();
+  });
+})();
+</script>
+
+
+
+</body>
+</html>
