@@ -70,6 +70,10 @@
 .footCta p{margin:0 auto 20px!important;max-width:640px!important;opacity:.85}
 .footCta .btn{display:inline-flex!important;margin:0 auto!important}
 
+.heroTitle{font-size:clamp(2rem,5vw,4rem);line-height:1.1;font-weight:800;}
+.line1,.line2,.heroPrice{display:block;}
+.heroPrice{background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent;}
+
 </style>
 </head>
 <body>
@@ -128,9 +132,11 @@
   <div class="container">
     <div style="max-width:820px;margin:0 auto;text-align:center;">
       <span class="pill" style="margin-bottom:18px;"><span class="dot"></span>Od lipca 2026</span>
-      <h1 style="font-size:clamp(2rem,5vw,3.4rem);line-height:1.1;letter-spacing:-.02em;margin:0 0 20px;">
-        Cennik Microsoft&nbsp;365&nbsp;dla&nbsp;firm <span style="background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent;">od&nbsp;25&nbsp;PLN&nbsp;/&nbsp;mc</span>
-      </h1>
+        <h1 class="heroTitle">
+        <span class="line1">Cennik</span>
+        <span class="line2">Microsoft 365 dla firm</span>
+        <span class="heroPrice">od 25 PLN / mc</span>
+        </h1>
       <p class="lead" style="max-width:680px;margin:0 auto 28px;font-size:1.05rem;line-height:1.55;">
         Szczegóowy cennik licencji Microsoft 365 w PLN: Business Basic, Standard, Premium, Copilot, Defender, Purview, Entra ID, Intune. Każdy pakiet w 3 wariantach płatności, żebyś wybrał model pasujący do Twojego budżetu.
       </p>
