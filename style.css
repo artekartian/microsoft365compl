@@ -613,3 +613,7 @@ footer{
   .footBottom .fine{text-align:center;}
 }
 .drawer .panel{width:320px;max-width:90vw}
+
+.comparisonCard{width:100%;padding:0;overflow-x:auto;}
+.comparisonTable{width:100%;border-collapse:collapse;font-size:.85rem;}
+@media(max-width:480px){.comparisonCard{overflow-x:visible;border-radius:16px;}.comparisonTable{width:100%;table-layout:fixed;font-size:11px;line-height:1.25;}.comparisonTable th,.comparisonTable td{min-width:0;padding:9px 3px!important;overflow-wrap:normal;word-break:normal;vertical-align:middle;}.comparisonTable th:first-child,.comparisonTable td:first-child{width:40%;padding-left:8px!important;padding-right:5px!important;text-align:left;}.comparisonTable th:not(:first-child),.comparisonTable td:not(:first-child){width:15%;text-align:center;}.comparisonTable thead th{font-size:10px;line-height:1.15;}.comparisonTable tbody td:first-child{font-size:10.5px;line-height:1.3;}}
