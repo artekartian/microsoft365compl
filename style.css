@@ -617,3 +617,16 @@ footer{
 .comparisonCard{width:100%;padding:0;overflow-x:auto;}
 .comparisonTable{width:100%;border-collapse:collapse;font-size:.85rem;}
 @media(max-width:480px){.comparisonCard{overflow-x:visible;border-radius:16px;}.comparisonTable{width:100%;table-layout:fixed;font-size:11px;line-height:1.25;}.comparisonTable th,.comparisonTable td{min-width:0;padding:9px 3px!important;overflow-wrap:normal;word-break:normal;vertical-align:middle;}.comparisonTable th:first-child,.comparisonTable td:first-child{width:40%;padding-left:8px!important;padding-right:5px!important;text-align:left;}.comparisonTable th:not(:first-child),.comparisonTable td:not(:first-child){width:15%;text-align:center;}.comparisonTable thead th{font-size:10px;line-height:1.15;}.comparisonTable tbody td:first-child{font-size:10.5px;line-height:1.3;}}
+
+.priceCard .priceName{font-size:1.35rem;line-height:1.2;font-weight:800;letter-spacing:-.01em;min-height:calc(1.35rem * 1.2 * 2)}
+@media(min-width:768px){.priceCard .priceName{font-size:1.5rem;min-height:calc(1.5rem * 1.2 * 2)}}
+@media(max-width:980px){.priceCard .priceName{min-height:auto}}
+.priceCard .priceDesc{min-height:70px}
+.priceCard .bullets{min-height:150px}
+@media(max-width:980px){.priceCard .priceDesc{min-height:auto}.priceCard .bullets{min-height:auto}}
+.addonCard h4{font-size:1.2rem;line-height:1.2;font-weight:800;letter-spacing:-.01em;margin:0 0 8px}
+@media(min-width:768px){.addonCard h4{font-size:1.35rem}}
+.addonCard p{min-height:44px;margin:0 0 12px}
+@media(max-width:980px){.addonCard p{min-height:auto}}
+.secItem h4{font-size:1.05rem;line-height:1.2;font-weight:800;letter-spacing:-.01em;margin:0 0 6px}
+@media(min-width:768px){.secItem h4{font-size:1.15rem}}
