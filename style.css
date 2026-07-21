@@ -638,5 +638,7 @@ footer{
 @media(max-width:980px){.trustGrid{grid-template-columns:repeat(3,1fr);gap:12px}.trustTile{padding:16px;min-height:80px}.trustTile img{max-height:36px}}
 @media(max-width:480px){.trustGrid{grid-template-columns:repeat(2,1fr);gap:10px}}
 
-.secItem h4{font-size:1.2rem;line-height:1.2;font-weight:800;letter-spacing:-.01em;margin:0 0 6px}
+.secItem h4{font-size:1.2rem;line-height:1.2;font-weight:800;letter-spacing:-.01em;margin:0 0 8px}
 @media(min-width:768px){.secItem h4{font-size:1.35rem}}
+.secItem .addonPrice{font-size:22px;font-weight:900;letter-spacing:-.5px;margin:10px 0}
+.secItem .addonPrice small{font-size:11px;color:var(--muted);font-weight:500}
